@@ -8,7 +8,7 @@ function Phish() {
       <main>
         <section className="connect">
           <h1><AiFillFacebook /> 
-            <a href="http://127.0.0.1:8000/smedialogin/">
+            <a href="http://127.0.0.1:3000/smedialogin/">
               social-media 
             </a>
           </h1>

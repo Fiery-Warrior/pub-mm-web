@@ -74,9 +74,9 @@ return (
 				<a href="javascript:void(0)" className="closebtn" onClick={closeNav}>
 					x
 				</a>
-				<a href="http://127.0.0.1:8000/hambar#section-2">Recon</a>
-				<a href="http://127.0.0.1:8000/hambar/#section-2">Weapon</a>
-				<a href="http://127.0.0.1:8000/hambar/#section-2">Delivery</a>
+				<a href="http://127.0.0.1:3000/hambar#section-2">Recon</a>
+				<a href="http://127.0.0.1:3000/hambar/#section-2">Weapon</a>
+				<a href="http://127.0.0.1:3000/hambar/#section-2">Delivery</a>
 				<a href="#">Exploit</a>
 				<a href="#">Install</a>
 				<a href="#">Control</a>
@@ -91,7 +91,7 @@ return (
 
 
 
-            <a href="http://127.0.0.1:8000">
+            <a href="http://127.0.0.1:3000">
             <AiFillHome className='icon-house' id = 'home' />
             </a>
 
@@ -140,7 +140,7 @@ return (
 
 				<StyledTooltip  title="Control">
 					{/* <NavLink to="/control" activeStyle> */}
-					<a href="http://127.0.0.1:8000/connections/"> {/** onClick={() => window.location.reload()} */}
+					<a href="http://127.0.0.1:3000/connections/"> {/** onClick={() => window.location.reload()} */}
 
 						<IoLogoGameControllerB className='icon' id ='command-control'/>
 						  </a>
@@ -157,7 +157,7 @@ return (
 			</>
 
 			<a
-				href="http://127.0.0.1:8000/web-terminal/"
+				href="http://127.0.0.1:3000/web-terminal/"
 				target="_blank"
 				style={{ display: width > 1515 ? "block" : "none" }}
 			>

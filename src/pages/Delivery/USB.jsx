@@ -29,7 +29,7 @@ export default function BasicCard() {
   };
 
   return (
-    <a href="http://127.0.0.1:8000/filedisplayusb/" target="_blank">
+    <a href="http://127.0.0.1:3000/filedisplayusb/" target="_blank">
       <Card
       sx={{
         minWidth: 455,
@@ -66,7 +66,7 @@ export default function BasicCard() {
         </CardContent>
         {hovered && (
           <CardActions>
-            <a href="http://127.0.0.1:8000/filedisplayusb/" target="_blank">
+            <a href="http://127.0.0.1:3000/filedisplayusb/" target="_blank">
             </a>
           </CardActions>
         )}

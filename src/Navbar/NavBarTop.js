@@ -36,7 +36,7 @@ function NavBarTop() {
 
             <a
                 className="App-link"
-                href="http://127.0.0.1:8000/web-terminal/"
+                href="http://127.0.0.1:3000/web-terminal/"
                 target="_blank"
                 rel="noopener noreferrer"
             >
@@ -47,7 +47,7 @@ function NavBarTop() {
               <MdMenu/>
             </section>
 
-            <a href="http://127.0.0.1:8000">
+            <a href="http://127.0.0.1:3000">
             <AiFillHome className='icon-house' id = 'home' />
             </a>
 
