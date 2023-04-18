@@ -42,7 +42,7 @@ import Navbar from './Navbar';
 
 import Home from './pages/home';
 
-// import Pub from './pages/pub.js';
+import Pub from './pages/Pub/pub.js';
 
 function App() {
   const [showTerminal, setShowTerminal] = useState(false);
@@ -101,7 +101,7 @@ function App() {
                 <Route path='/Home' element={<Home/>} />
 
 
-                {/* <Route path='/Pub' element={<Pub/>} /> */}
+                <Route path='/Pub' element={<Pub/>} />
 
 
 

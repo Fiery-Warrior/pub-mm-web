@@ -91,7 +91,7 @@ return (
 
 
 
-            <a href="http://127.0.0.1:3000">
+            <a href="http://127.0.0.1:3000/home">
             <AiFillHome className='icon-house' id = 'home' />
             </a>
 

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Pub/pub.css';
+import './pub.css';
 
 function Pub() {
   const [title, setTitle] = useState("The Website for Security Educators");
@@ -14,14 +14,14 @@ function Pub() {
 
 
   return (
-    <div className="app-container">
+    <div className="app-container pub">
       <header>
         <img src="/logo.png" alt="logo" style={{width: '250px', height: '45px'}} />
         {/*<h1>Moriarty Matrix</h1>*/}
         <nav>
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">Features</a></li>
+            <li><a href="/home" target="_blank">Features</a></li>
             <li><a href="https://github.com/Fiery-Warrior/mm_pythonweb" target="_blank">GitHub</a></li>
             <li><a href="#">Contact Us</a></li>
           </ul>
@@ -75,8 +75,6 @@ function Pub() {
               Domain URL Outputs Registered data
               Email Address Outputs Phone numbers
               Phone Number Outputs Information
-              IP Address Outputs Location, Owner, ISP...
-              Website Clone 'Phish' Outputs Users Choice
             
             </p>
             {/* <a href="#" class="button">See demo</a> */}
