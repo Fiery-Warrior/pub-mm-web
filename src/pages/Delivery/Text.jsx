@@ -8,14 +8,6 @@ import { RiMessage2Line } from 'react-icons/ri';
 
 import './recon.css';
 
-const bull = (
-  <Box
-    component="span"
-    sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
-  >
-    •
-  </Box>
-);
 
 export default function BasicCard() {
   const [hovered, setHovered] = React.useState(false);
@@ -29,7 +21,7 @@ export default function BasicCard() {
   };
 
   return (
-    <a href="http://127.0.0.1:3000/filedisplaytext/" target="_blank">
+    <a href="/filedisplaytext/" target="_blank">
       <Card
       sx={{
         minWidth: 455,
@@ -66,7 +58,7 @@ export default function BasicCard() {
         </CardContent>
         {hovered && (
           <CardActions>
-            <a href="http://127.0.0.1:3000/filedisplaytext/" target="_blank">
+            <a href="/filedisplaytext/" target="_blank">
             </a>
           </CardActions>
         )}

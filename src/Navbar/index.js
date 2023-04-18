@@ -10,7 +10,6 @@ import { FaLaptopCode } from "react-icons/fa"
 import { CgTerminal } from "react-icons/cg"
 import { AiFillHome } from "react-icons/ai"
 import { BsGithub } from "react-icons/bs"
-// import { MdMenu } from "react-icons/md"
 import { NavLink } from "./NavbarElements";
 import { SiTorproject } from "react-icons/si"
 import Tooltip from '@mui/material/Tooltip';
@@ -57,11 +56,6 @@ return (
 
 
 
-
-			{/**
-            <section className='icon-hamburger-menu' id ='ham-menu'>
-              <MdMenu/>
-            </section>**/}
 			<button className='icon-hamburger-menu' onClick={openNav}>
 				☰
 			</button> 
@@ -70,9 +64,9 @@ return (
 				<a href="javascript:void(0)" className="closebtn" onClick={closeNav}>
 					x
 				</a>
-				<a href="http://127.0.0.1:3000/hambar#section-2">Recon</a>
-				<a href="http://127.0.0.1:3000/hambar/#section-2">Weapon</a>
-				<a href="http://127.0.0.1:3000/hambar/#section-2">Delivery</a>
+				<a href="/hambar">Recon</a>
+				<a href="/hambar">Weapon</a>
+				<a href="/hambar">Delivery</a>
 				<a href="#">Exploit</a>
 				<a href="#">Install</a>
 				<a href="#">Control</a>
@@ -84,10 +78,7 @@ return (
 
 
 
-
-
-
-            <a href="http://127.0.0.1:3000/home">
+            <a href="/home">
             <AiFillHome className='icon-house' id = 'home' />
             </a>
 
@@ -98,7 +89,7 @@ return (
 
 			<>
 
-			<a href= "https://github.com/Fiery-Warrior/moriarty-matrix" target="_blank">
+			<a href= "https://github.com/Fiery-Warrior/mm_pythonweb" target="_blank">
 				<BsGithub className='icon-circle' id ='clock'/>
 			</a>
 
@@ -136,7 +127,7 @@ return (
 
 				<StyledTooltip  title="Control">
 					{/* <NavLink to="/control" activeStyle> */}
-					<a href="http://127.0.0.1:3000/connections/"> {/** onClick={() => window.location.reload()} */}
+					<a href="/connections/"> {/** onClick={() => window.location.reload()} */}
 
 						<IoLogoGameControllerB className='icon' id ='command-control'/>
 						  </a>
@@ -152,37 +143,17 @@ return (
 
 			</>
 
-			<a
-				href="http://127.0.0.1:3000/web-terminal/"
-				target="_blank"
-				style={{ display: width > 1515 ? "block" : "none" }}
-			>
-				<CgTerminal className="terminal-icon" id="terminal" />
-			</a>
+
 			<BsPersonCircle
 				className="profile"
 				id="profile"
 				style={{ display: width > 1515 ? "block" : "none" }}
 			/>
 
-			{/* <a href="http://127.0.0.1:8000/web-terminal/" target="_blank">
-            <CgTerminal className= 'terminal-icon' id = 'terminal' />
-            </a>
-            <BsPersonCircle className='profile' id = 'profile'/> */}
+		
 
 		</div>
-		{/*<footer className="footer">
-        <div className="logo-m">
-          <h1>Moriarty</h1>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms and Conditions</a></li>
-            <li><a href="#">FAQ</a></li>
-          </ul>
-        </nav>
-		</footer>*/}
+		
 	</div>
 );
 };
