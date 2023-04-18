@@ -24,13 +24,28 @@ body {
   padding: 20px;
 }
 
-header {
+/* header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 0;
   border-bottom: 1px solid #ddd;
+} */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  border-bottom: 3px solid #ddd;
+
+  z-index: 9999;
 }
+
+/* main {
+  padding-top: 80px;
+} */
+
+
 
 header h1 {
   font-size: 2rem;
@@ -124,7 +139,12 @@ nav li:notnav li:not(:last-child) {
 
 
 
-
+  .expanded {
+    width: 500px;
+    height: 500px;
+    transition: width 0.5s, height 0.5s;
+  }
+  
 
 
 
@@ -154,7 +174,7 @@ header {
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 2rem;
+padding: 3rem;
 background-color: black;
 position: fixed;
 top: 0;
@@ -202,12 +222,12 @@ text-align: center;
 }
 
 .intro h1 {
-font-size: 8rem;
-margin-bottom: 2rem;
+font-size: 2rem;
+margin-bottom: 1rem;
 }
 
 .intro p {
-font-size: 3rem;
+font-size: 3.5rem;
 }
 
 .features {

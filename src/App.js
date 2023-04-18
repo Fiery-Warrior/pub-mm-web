@@ -8,7 +8,7 @@ function App() {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setTitle(titles[Math.floor(Math.random() * titles.length)]);
-    }, 1700); /*Time before next message is displayed*/
+    }, 2700); /*Time before next message is displayed*/
     return () => clearInterval(intervalId);
   }, [titles]);
 
@@ -16,13 +16,13 @@ function App() {
   return (
     <div className="app-container">
       <header>
-        <img src="/logo.png" alt="logo" style={{width: '200px', height: '40px'}} />
+        <img src="/logo.png" alt="logo" style={{width: '250px', height: '45px'}} />
         {/*<h1>Moriarty Matrix</h1>*/}
         <nav>
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Features</a></li>
-            <li><a href="#">Pricing</a></li>
+            <li><a href="https://github.com/Fiery-Warrior/mm_pythonweb" target="_blank">GitHub</a></li>
             <li><a href="#">Contact Us</a></li>
           </ul>
         </nav>
@@ -32,7 +32,7 @@ function App() {
 
       <section className="intro">
           <div className="intro-content">
-            <h1>Moriarty Matrix</h1>
+            {/* <h1>Moriarty Matrix</h1> */}
             <p>{title}</p>
           </div>
         </section>
@@ -64,69 +64,73 @@ function App() {
 
         <div class="card">
           <h2>Reconnaissance</h2>
-          <img src="/reconsherlock.png" alt="Sherlock" id="sherlock-img"/>
-          <p>Takes minimal user input on the recon stage and outputting a detailed dossier on the target.</p>
+          {/* <img src="/reconsherlock.png" alt="Sherlock-recon" id="sherlock-recon-img"/> */}
+          <p>Input one piece of data Outputs into a detailed analysis of the target</p>
           <div class="card-details">
             <br/>
-            <p>Provides information concerning: usernames, emails, phone numbers, IP addresses, and more information. As seen below the user enters minimal information and 
-              receives an output like below which can be further used to gain control of target. Uses original recon search code, Sherlock, ______, and ________
+          {/**<p>Requires minimal user input and provides a detailed dossier on the target, including information such as usernames, emails, phone numbers, IP addresses, and more. .</p>
+             */}
+            <p>
+              Usernames Outputs All Accounts urls <br/>
+              Domain URL Outputs Registered data
+              Email Address Outputs Phone numbers
+              Phone Number Outputs Information
+              IP Address Outputs Location, Owner, ISP...
+              Website Clone 'Phish' Outputs Users Choice
+            
             </p>
-            <a href="#" class="button">See more photos</a>
+            {/* <a href="#" class="button">See demo</a> */}
           </div>
         </div>
 
         <div class="card">
           <h2>Weaponization</h2>
-          {/*<img src="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/cyc2022_20b.jpg" alt="Earth Science">*/}
+          {/* <img src="/weap.png" alt="Sherlock-weap" id="sherlock-weap-img"/> */}
           <p>basic how moriarty matrix handles stage: Weaponization</p>
           <div class="card-details">
             <br/>
             <p>more in depth on how it handles this stage-in this matrix-what the benefit is-what user gets</p>
-            <a href="#" class="button">See more photos</a>
+            {/* <a href="#" class="button">See demo</a> */}
           </div>
         </div>
 
         <div class="card">
           <h2>Delivery</h2>
-          {/*<img src="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/2021_0917_small_explorers_full.jpg" alt="Aeronautics">*/}
           <p>basic how moriarty matrix handles stage: Delivery</p>
           <div class="card-details">
             <br/>
             <p>more in depth on how it handles this stage-in this matrix-what the benefit is-what user gets</p>
-            <a href="#" class="button">See more photos</a>
+            {/* <a href="#" class="button">See demo</a> */}
           </div>
         </div>
 
         <div class="card">
           <h2>Install/Exploit</h2>
-          {/*<img src="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/jupiter_21hubble_pia23615-16.png" alt="Planetary Science">*/}
           <p>basic how moriarty matrix handles stages: Install/Exploit</p>
           <div class="card-details">
             <br/>
             <p>more in depth on how it handles this stage-in this matrix-what the benefit is-what user gets</p>
-            <a href="#" class="button">See more photos</a>
+            {/* <a href="#" class="button">See demo</a> */}
           </div>
         </div>
 
         <div class="card">
           <h2>Command & Control</h2>
-          {/*<img src="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/solar-dynamics-observatory-eclipse.jpg" alt="Heliophysics">*/}
           <p>basic how moriarty matrix handles stage: Command & Control</p>
           <div class="card-details">
             <br/>
             <p>more in depth on how it handles this stage-in this matrix-what the benefit is-what user gets</p>
-            <a href="#" class="button">See more photos</a>
+            {/* <a href="#" class="button">See demo</a> */}
             </div>
               </div>
 
               <div class="card">
                 <h2>Actions on Objectives</h2>
-                {/*<img src="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/insight.jpg" alt="Technology">*/}
                 <p>basic how moriarty matrix handles stage: Actions on Objectives</p>
                 <div class="card-details">
                   <br/>
                   <p>more in depth on how it handles this stage-in this matrix-what the benefit is-what user gets</p>
-                  <a href="#" class="button">See more photos</a>
+                  {/* <a href="#" class="button">See demo</a> */}
                 </div>
               </div>
             </div>      
@@ -146,7 +150,7 @@ function App() {
 
           <h2>Recent Updates</h2>
             <div className="blog-card" id="recon">
-              <h3>Reconnaissance</h3>
+              <h3>User Interface</h3>
               <p>The latest version of Moriarty is now available for download, featuring numerous bug fixes and security enhancements.</p>
               <a href="#">Read more</a>
             </div>
@@ -165,4 +169,3 @@ function App() {
 }
 
 export default App;
-
