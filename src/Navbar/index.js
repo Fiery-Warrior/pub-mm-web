@@ -10,7 +10,7 @@ import { FaLaptopCode } from "react-icons/fa"
 import { CgTerminal } from "react-icons/cg"
 import { AiFillHome } from "react-icons/ai"
 import { BsGithub } from "react-icons/bs"
-import { MdMenu } from "react-icons/md"
+// import { MdMenu } from "react-icons/md"
 import { NavLink } from "./NavbarElements";
 import { SiTorproject } from "react-icons/si"
 import Tooltip from '@mui/material/Tooltip';
@@ -49,15 +49,11 @@ return (
 		<div className='flex-container-top'>
 
 
-		{/* <a
-                className="App-link"
-                href="http://127.0.0.1:8000/web-terminal/"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Moriarty
-            </a> */}
+
+			
+			<a href="/Pub" target="_blank">
 			<img src={logo} alt="logo" style={{width: '200px', height: '35px'}} className='logo-moriarty'/>
+			</a>
 
 
 

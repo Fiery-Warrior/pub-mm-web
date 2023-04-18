@@ -16,7 +16,10 @@ function Pub() {
   return (
     <div className="app-container pub">
       <header>
-        <img src="/logo.png" alt="logo" style={{width: '250px', height: '45px'}} />
+      <a href = "/home" target="_blank">
+          <img src="/logo.png" alt="logo" style={{width: '250px', height: '45px'}} />
+        </a>
+        {/* <img src="/logo.png" alt="logo" style={{width: '250px', height: '45px'}} /> */}
         {/*<h1>Moriarty Matrix</h1>*/}
         <nav>
           <ul>
