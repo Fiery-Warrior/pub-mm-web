@@ -91,12 +91,7 @@
   background-color: #0069d9;
 }
 
-/* .pub footer {
-  padding: 20px 0;
-  text-align: center;
-  border-top: 1px solid #ddd;
-  background-color: #000000;
-} */
+
 .pub footer {
   display: flex;
   align-items: center;
@@ -168,7 +163,7 @@ padding: 0;
 }
 
 .pub .intro {
-background-color: black;
+/* background-color: black; */
 padding: 5rem 2rem;
 display: flex;
 justify-content: center;
