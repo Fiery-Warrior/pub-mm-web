@@ -1,0 +1,397 @@
+.pub * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pub body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.pub .app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.pub header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  border-bottom: 3px solid #ddd;
+  z-index: 9999;
+}
+
+.pub header h1 {
+  font-size: 2rem;
+}
+
+.pub nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.pub nav li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.pub nav a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+.pub nav a:hover {
+  color: #007bff;
+}
+
+.pub main {
+  padding: 20px 0;
+}
+
+.pub section:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.pub section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.pub section p {
+  margin-bottom: 20px;
+}
+
+.pub section ul {
+  list-style: none;
+  margin-left: 20px;
+}
+
+.pub section li:before {
+  content: '•';
+  margin-right: 10px;
+}
+
+.pub button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.pub button:hover {
+  background-color: #0069d9;
+}
+
+/* .pub footer {
+  padding: 20px 0;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  background-color: #000000;
+} */
+.pub footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  background-color: #000000;
+}
+
+
+.pub .expanded {
+  width: 500px;
+  height: 500px;
+  transition: width 0.5s, height 0.5s;
+}
+
+/*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}*/
+.pub body {
+  background-color: #000000/*#2e3136*/;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.pub header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.pub nav ul {
+  display: flex;
+}
+
+.pub nav ul li {
+  list-style: none;
+  margin-left: 2rem;
+}
+
+.pub nav ul li:first-child {
+  margin-left: 0;
+}
+
+.pub nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.pub nav ul li a:hover {
+  color: #9f9f9f;
+}
+
+.pub .main-container {
+  margin-top: 6rem;
+}
+
+.pub .intro {
+background-color: black;
+padding: 5rem 2rem;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+
+
+.pub body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  }
+  
+  .pub .intro h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  }
+  
+  .pub .intro p {
+  font-size: 3.5rem;
+  }
+  
+  .pub .features {
+  display: flex;
+  justify-content: space-around;
+  margin: 8rem 0;
+  }
+  
+  .pub .feature-card {
+  border-radius: 1.5rem;
+  padding: 4rem 2rem;
+  text-align: center;
+  max-width: 30rem;
+  transition: all 0.3s ease;
+  border-style: solid;
+  background-color: #fafcff;
+  color: #000000;
+  }
+  
+  .pub .feature-card:hover {
+  transform: translateY(-1rem);
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3);
+  }
+  
+  .pub .feature-card i {
+  font-size: 5rem;
+  color: #fff;
+  margin-bottom: 2rem;
+  }
+  
+  .pub .feature-card h3 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  }
+  
+  .pub .feature-card p {
+  font-size: 1.8rem;
+  }
+  
+  .pub .cta {
+  /* background-color: black; */
+  padding: 8rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  }
+  
+  .pub .cta button {
+  background-color: #fafcff;
+  color: #000000;
+  font-size: 2.5rem;
+  padding: 1.5rem 3rem;
+  border: none;
+  border-radius: 5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  }
+  
+  .pub .cta button:hover {
+  background-color: #972727;
+  color: #edf0f6;
+  }
+  
+  .pub .blog {
+  /* background-color: black; */
+  padding: 8rem 2rem;
+  text-align: center;
+  }
+  
+  .pub .blog h2 {
+  font-size: 4rem;
+  margin-bottom: 4rem;
+  }
+  
+  .pub .blog-card {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 4rem 2rem;
+  text-align: center;
+  max-width: 60rem;
+  margin: 0 auto 4rem;
+  transition: all 0.3s ease;
+  }
+  
+  .pub .blog-card:hover {
+  transform: translateY(-1rem);
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3);
+  }
+  
+  .pub .blog-card h3 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: black;
+  }
+  
+  .pub .blog-card p {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: black;
+  }
+  
+  .pub .blog-card a {
+  color: #f9c41c;
+  text-decoration: none;
+  font-size: 1.8rem;
+  }
+  
+  .pub .blog-card a:hover {
+  text-decoration: underline;
+  }
+  
+  
+  .pub .blog-card a:hover {
+text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+.pub nav {
+display: none;
+}
+}
+
+.pub .cards-container {
+/* background-color: #392e2e; */
+padding: 20px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+box-shadow: 0px 0px 10px #fff;
+/* /width: 58%;/ /size of te box width containing all 6 cards/ */
+}
+
+.pub .cards {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+}
+
+.pub .card {
+/* /flex-basis: calc(33.33% - 20px);/ /card row: 2 cards, column: 3 cards/ */
+flex-basis: calc(33.33% - 56px); 
+margin-bottom: 20px;
+background-color: #f2f2f2;
+padding: 20px;
+border-radius: 10px;
+}
+
+.pub .card-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+grid-gap: 20px;
+grid-auto-rows: minmax(200px, auto);
+}
+
+.pub .card:hover {
+box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+transform: scale(1.05);
+}
+
+.pub .card h2 {
+font-size: 1.5rem;
+margin-top: 0;
+color: black;
+}
+
+.pub .card img {
+display: block;
+margin: 20px auto;
+max-width: 100%;
+}
+
+.pub .card p {
+margin-top: 0;
+color: black;
+}
+
+.pub .card-details {
+display: none;
+}
+
+.pub .card:hover .card-details {
+display: block;
+}
+
+.pub .card-details p {
+margin-bottom: 20px;
+}
+
+.pub .button {
+display: block;
+margin: 20px auto 0;
+text-align: center;
+padding: 10px 20px;
+background-color: #0072c6;
+color: white;
+text-decoration: none;
+border-radius: 5px;
+transition: background-color 0.3s ease;
+}
+
+.pub .button:hover {
+background-color: #005ea2;
+}
