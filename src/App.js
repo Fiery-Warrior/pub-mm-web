@@ -42,6 +42,7 @@ import Navbar from './Navbar';
 
 import Home from './pages/home';
 
+// import Pub from './pages/pub.js';
 
 function App() {
   const [showTerminal, setShowTerminal] = useState(false);
@@ -98,6 +99,10 @@ function App() {
 
                 
                 <Route path='/Home' element={<Home/>} />
+
+
+                {/* <Route path='/Pub' element={<Pub/>} /> */}
+
 
 
 
