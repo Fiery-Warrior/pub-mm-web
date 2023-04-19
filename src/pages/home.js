@@ -21,6 +21,7 @@ import Username from './HomeCards/videos/Username.mp4';
 import Whois from './HomeCards/videos/Whois.mp4';
 import Connections from './HomeCards/videos/Connections.mp4';
 import Actions from './HomeCards/videos/Actions.mp4';
+import IP from './HomeCards/videos/IP.mp4';
 
 function Home() {
   const [showVideo, setShowVideo] = useState(false);
@@ -110,10 +111,14 @@ function Home() {
             <br/> 
             <p>After finding information about the ip an attacker may use this information in various fashions such as knowing where someone lives</p>
               <br/>
+              <br/>
+              <video width="750" height="500" controls >
+                    <source src={IP} type="video/mp4"/>
+              </video>
           </div>
         }
-        image= {ip} className = "img-large"
-        underImageDescription = "Inputted domain ip 172.217.17.238"
+        // image= {ip} className = "img-large"
+        underImageDescription = "Inputted domain ip 12.561.238"
       />
 
 
