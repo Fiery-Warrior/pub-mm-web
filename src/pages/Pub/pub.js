@@ -26,7 +26,7 @@ function Pub() {
             <li><a href="#">Home</a></li>
             <li><a href="/home" target="_blank">Features</a></li>
             <li><a href="https://github.com/Fiery-Warrior/mm_pythonweb" target="_blank">GitHub</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="/contacts">Contact Us</a></li>
           </ul>
         </nav>
       </header>

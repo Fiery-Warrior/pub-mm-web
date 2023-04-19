@@ -63,14 +63,14 @@ return (
 				<a href="javascript:void(0)" className="closebtn" onClick={closeNav}>
 					x
 				</a>
-				<a href="/hambar">Recon</a>
-				<a href="/hambar">Weapon</a>
-				<a href="/hambar">Delivery</a>
-				<a href="#">Exploit</a>
-				<a href="#">Install</a>
-				<a href="#">Control</a>
-				<a href="#">Actions-Obj</a>
-				<a href="#">Ip Map</a>
+
+				<a href="/hambar" class="navbar__item"><GiMagnifyingGlass /> Recon</a>
+				<a href="#" class="navbar__item"><GiAnvilImpact /> Weapon</a>
+				<a href="#" class="navbar__item"><TfiEmail /> Delivery</a>
+				<a href="#" class="navbar__item"><BsFillDoorOpenFill /> Exploit</a>
+				<a href="#" class="navbar__item"><FaDownload /> Install</a>
+				<a href="#" class="navbar__item"><IoLogoGameControllerB /> Control</a>
+				<a href="#" class="navbar__item"><FaLaptopCode /> Actions</a>
 
 
 			</div>
@@ -134,7 +134,7 @@ return (
 					{/* </NavLink> */}
 				</StyledTooltip >
 
-				<StyledTooltip  title="Objective">
+				<StyledTooltip  title="Actions">
 					<NavLink to="/objectives" activeStyle>
 						<FaLaptopCode className='icon' id ='actions-on-objective'/>
 					</NavLink>

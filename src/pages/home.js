@@ -1,34 +1,29 @@
-import React from "react";
-
+import React, { useState } from "react";
 import { GiMagnifyingGlass } from "react-icons/gi";
 import { IoPerson } from 'react-icons/io5';
 import { CgWebsite } from 'react-icons/cg';
 import { MdSignalWifiStatusbarConnectedNoInternet4 } from 'react-icons/md';
 import { MdOutlinePhishing } from 'react-icons/md';
-
 import { BsBluetooth } from 'react-icons/bs';
-import username from './HomeCards/images/username.png';
-import domain from './HomeCards/images/domain.png';
-import ip from './HomeCards/images/ip.png';
-import clone from './HomeCards/images/clone.png';
-
-
-
 import { GiAnvilImpact } from "react-icons/gi";
 import { TfiEmail } from "react-icons/tfi";
 import { FaDownload } from "react-icons/fa"
 import { IoLogoGameControllerB } from "react-icons/io"
 import { BsFillDoorOpenFill } from "react-icons/bs"
 import { FaLaptopCode } from "react-icons/fa"
-
-
+// import username from './HomeCards/images/username.png';
+import domain from './HomeCards/images/domain.png';
+import ip from './HomeCards/images/ip.png';
+import clone from './HomeCards/images/clone.png';
 import Card from "./HomeCards/homecards";
 
-
-
-  
+import Username from './HomeCards/videos/Username.mp4';
+import Whois from './HomeCards/videos/Whois.mp4';
+import Connections from './HomeCards/videos/Connections.mp4';
+import Actions from './HomeCards/videos/Actions.mp4';
 
 function Home() {
+  const [showVideo, setShowVideo] = useState(false);
 
   const linkStyle = {
     color: 'white',
@@ -49,36 +44,36 @@ function Home() {
         padding: "20px",
       }}
     >
-
-
-<Card
-  icon={<GiMagnifyingGlass style={{ color: '#FF3B30' }}/>}
-  title="Recon"
-  className="card"
-  description={
-    <div>
       <Card
-        // icon={<IoPerson />}
-        icon={<IoPerson /> }
-        title="Username"
+        icon={<GiMagnifyingGlass style={{ color: '#FF3B30' }}/>}
+        title="Recon"
+        className="card"
         description={
           <div>
-            <h3>This phase is about Username and their accounts.</h3>
-            <br/>
-            <p>If you have a username (such as from instagram), you can input that username and will receive 
-              urls to numerous accounts that it is registered with: popular examples include: spotify, youtube, Buzzfeed, Quizlet, and
-              other sites that will give an insight into the user's prefrences and lifestyle. </p>
-            <br/> 
-            <p>After finding information about the target an attacker may use this information to reach out to target on various platforms, assume their identity,
-              craft phishing emails, etc...</p>
-              <br/>
-            <p>Backend & Database Powered by</p> <a href = "https://github.com/sherlock-project/sherlock.git" style={linkStyle} target="_blank">Sherlock</a>
-          </div>
-        }
-        image= {username} className = "img-large"
-        underImageDescription = "Inputted username: icecube and outputted accounts with that URL"
-      />
+            <Card
+              icon={<IoPerson />}
+              title="Username"
+              description={
+                <div>
+                  <h3>This phase is about Username and their accounts.</h3>
+                  <br/>
+                  <p>If you have a username (such as from Instagram), you can input that username and will receive 
+                    URLs to numerous accounts that it is registered with. Popular examples include Spotify, YouTube, Buzzfeed, Quizlet, and other sites that will give an insight into the user's preferences and lifestyle.</p>
+                  <br/> 
+                  <p>After finding information about the target, an attacker may use this information to reach out to the target on various platforms, assume their identity, craft phishing emails, etc...</p>
+                  <br/>
+                  <video width="750" height="500" controls >
+                    <source src={Username} type="video/mp4"/>
+                  </video>
+                  <p>Database of Username is Powered by </p>
+                  <a href="https://github.com/sherlock-project/sherlock.git" style={linkStyle} target="_blank" rel="noopener noreferrer">Sherlock</a>
+                </div>
+                
+              }
+              // image={username}
+              underImageDescription="Inputted username: icecube and outputted accounts with that URL"
 
+            />
       <Card
         icon={<CgWebsite />}
         
@@ -92,10 +87,13 @@ function Home() {
             <br/> 
             <p>After finding information about the domain an attacker may use this information</p>
               <br/>
+              <video width="750" height="500" controls >
+                    <source src={Whois} type="video/mp4"/>
+              </video>
             <p>Backend & Database Powered by whois</p> 
           </div>
         }
-        image= {domain} className = "img-large"
+        // image= {domain} className = "img-large"
         underImageDescription = "Inputted domain url: youtube.com and outputted data"
       />
 
@@ -176,31 +174,40 @@ function Home() {
     icon={<TfiEmail style={{ color: '#FF3B30' }}/>}
     title="Delivery"
     description="This section is about phishing and how it is important in cybersecurity."
-    image="https://images.unsplash.com/photo-1518458028783-6fbfbc7d017b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixid=MnwxfDB8MXxyYW5kb218MHwxfHx8fHx8Mnx8MTYyMzA0NTIyNg&ixlib=rb-1.2.1&q=80&w=1080"
     />
     <Card
     icon={<BsFillDoorOpenFill style={{ color: '#FF3B30' }}/>}
     title="Exploit"
     description="This section is about malware and how it is important in cybersecurity."
-    image="https://images.unsplash.com/photo-1531191053094-64c3c8354b2e?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixid=MnwxfDB8MXxyYW5kb218MHwxfHx8fHx8Mnx8MTYyMzA0NTI4Ng&ixlib=rb-1.2.1&q=80&w=1080"
     />
     <Card
     icon={<FaDownload style={{ color: '#FF3B30' }}/>}
     title="Install"
     description="This section is about install and how it is important in cybersecurity."
-    image="https://images.unsplash.com/photo-1531191053094-64c3c8354b2e?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixid=MnwxfDB8MXxyYW5kb218MHwxfHx8fHx8Mnx8MTYyMzA0NTI4Ng&ixlib=rb-1.2.1&q=80&w=1080"
     />    
     <Card
     icon={<IoLogoGameControllerB style={{ color: '#FF3B30' }}/>}
     title="Control"
-    description="This phase is about receiving initial connections."
-    image="https://images.unsplash.com/photo-1611550032916-1f032d19cda7?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixid=MnwxfDB8MXxyYW5kb218MHwxfHx8fHx8Mnx8MTYyMzA0NTM5Nw&ixlib=rb-1.2.1&q=80&w=1080"
+    // description="This phase is about receiving initial connections."
+    description={
+      <>
+        <video width="750" height="500" controls >
+          <source src={Connections} type="video/mp4"/>
+        </video>
+      </>
+    }
     />
     <Card
     icon={<FaLaptopCode style={{ color: '#FF3B30' }}/>}
     title="Objectives"
-    description="This section is about making the target machine do your (the attacker's will on objective) and how malicious code is used"
-    image="https://images.unsplash.com/photo-1611550032916-1f032d19cda7?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixid=MnwxfDB8MXxyYW5kb218MHwxfHx8fHx8Mnx8MTYyMzA0NTM5Nw&ixlib=rb-1.2.1&q=80&w=1080"
+    // description="This section is about making the target machine do your (the attacker's will on objective) and how malicious code is used"
+    description={
+      <>
+        <video width="750" height="500" controls >
+          <source src={Actions} type="video/mp4"/>
+        </video>
+      </>
+    }
     />
     </div>
   );
