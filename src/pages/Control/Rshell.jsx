@@ -8,7 +8,6 @@ import { VscTerminalPowershell } from 'react-icons/vsc';
 
 import './recon.css';
 
-
 export default function BasicCard() {
   const [hovered, setHovered] = React.useState(false);
 
@@ -35,6 +34,25 @@ export default function BasicCard() {
             left: '80px',
             height: '230px',
           },
+
+          '@media (max-width: 1415px)': {
+            top: '175px',
+            minWidth: 250,
+            height: '200px',
+            width: '320px',
+
+          },
+
+          '@media (max-width: 1215px)': {
+            top: '170px',
+            minWidth: 250,
+            height: '180px',
+            width: '250px',
+            left: '9%',
+
+          },
+
+
         }}
         className="card"
         onMouseEnter={handleMouseEnter}
@@ -64,4 +82,3 @@ export default function BasicCard() {
     </a>
   );
 }
-

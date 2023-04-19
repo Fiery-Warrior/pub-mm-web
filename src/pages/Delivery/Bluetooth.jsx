@@ -29,11 +29,32 @@ export default function BasicCard() {
         position: 'absolute',
         top: '150px',
         left: '530px',
+
         '@media (max-width: 1515px)': {
           left: '465px',
           minWidth: 350,
           height: '230px',
         },
+
+
+        '@media (max-width: 1415px)': {
+          left: '445px',
+          top: '175px',
+          minWidth: 250,
+          height: '200px',
+          width: '320px',
+
+        },
+
+        '@media (max-width: 1215px)': {
+          top: '170px',
+          minWidth: 250,
+          height: '180px',
+          width: '250px',
+          left: '40%',
+
+        },
+
       }}
         className="card"
         onMouseEnter={handleMouseEnter}

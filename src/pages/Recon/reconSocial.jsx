@@ -22,6 +22,7 @@ export default function BasicCard() {
 
   return (
     <a href="/phish/" target="_blank">
+
       <Card
       sx={{
         minWidth: 455,
@@ -39,10 +40,11 @@ export default function BasicCard() {
         },
 
         '@media (max-width: 1415px)': {
-          top: '410px',
+          top: '425px',
           minWidth: 250,
-          height: '180px',
+          height: '200px',
           width: '320px',
+          
 
         },
 
@@ -51,14 +53,16 @@ export default function BasicCard() {
             minWidth: 250,
             height: '180px',
             width: '250px',
-            right: '50px',
+            right: '9%',//'50px',
   
           },
+
       }}
         className="card"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
+
         <CardContent>
           <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
             {hovered ? (
@@ -80,6 +84,7 @@ export default function BasicCard() {
           </CardActions>
         )}
       </Card>
+
     </a>
   );
 }

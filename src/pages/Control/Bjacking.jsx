@@ -9,7 +9,6 @@ import { BsFillFileEarmarkLock2Fill } from 'react-icons/bs';
 import './recon.css';
 
 
-
 export default function BasicCard() {
   const [hovered, setHovered] = React.useState(false);
 
@@ -38,6 +37,25 @@ export default function BasicCard() {
           top: '405px',
 
         },
+
+        '@media (max-width: 1415px)': {
+          top: '425px',
+          minWidth: 250,
+          height: '200px',
+          width: '320px',
+
+        },
+        
+        '@media (max-width: 1215px)': {
+          top: '405px',
+          minWidth: 250,
+          height: '180px',
+          width: '250px',
+          left: '9%',//'120px',
+
+        },
+
+
       }}
         className="card"
         onMouseEnter={handleMouseEnter}

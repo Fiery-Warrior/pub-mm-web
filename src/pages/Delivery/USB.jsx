@@ -37,6 +37,26 @@ export default function BasicCard() {
           top: '405px',
 
         },
+
+        '@media (max-width: 1415px)': {
+          left: '445px',
+          top: '425px',
+          minWidth: 250,
+          height: '200px',
+          width: '320px',
+
+        },
+
+        '@media (max-width: 1215px)': {
+          top: '405px',
+          minWidth: 250,
+          height: '180px',
+          width: '250px',
+          left: '40%', //'470px',
+
+        },
+
+
       }}
         className="card"
         onMouseEnter={handleMouseEnter}

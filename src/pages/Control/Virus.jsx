@@ -5,7 +5,6 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import { BsVirus2  } from 'react-icons/bs';
-
 import './recon.css';
 
 
@@ -36,6 +35,25 @@ export default function BasicCard() {
           height: '230px',
 
         },
+
+        '@media (max-width: 1415px)': {
+          top: '175px',
+          minWidth: 250,
+          height: '200px',
+          width: '320px',
+
+        },
+
+        '@media (max-width: 1215px)': {
+          top: '170px',
+          minWidth: 250,
+          height: '180px',
+          width: '250px',
+          right: '9%',
+
+        },
+
+
       }}
         className="card"
         onMouseEnter={handleMouseEnter}
@@ -65,4 +83,3 @@ export default function BasicCard() {
     </a>
   );
 }
-

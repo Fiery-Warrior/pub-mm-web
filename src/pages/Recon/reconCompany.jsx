@@ -41,7 +41,7 @@ export default function BasicCard() {
           left: '445px',
           top: '175px',
           minWidth: 250,
-          height: '180px',
+          height: '200px',
           width: '320px',
 
         },
@@ -51,7 +51,7 @@ export default function BasicCard() {
           minWidth: 250,
           height: '180px',
           width: '250px',
-          left: '470px',
+          left: '40%',
 
         },
 
