@@ -46,8 +46,16 @@
     .card:hover {
         height: 235px !important;
     }
+
+
 }
 
+
+@media screen and (max-width: 1415px) {
+  .card:hover {
+      height: 205px !important;
+  }
+}
   
   .title {
     font-size: 50px;

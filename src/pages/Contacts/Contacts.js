@@ -38,6 +38,8 @@ function Contact() {
             <li><a href="https://twitter.com/FieryWarri89283" style={linkStyle}>FieryWarri89283</a></li>
             </ul>
         </section>
+
+        <h3>*Reminder Moriarty's Matrix is for educational use only (any mis-uses of this project is ONLY the user's fault)</h3>
       </main>
 
     </div>
