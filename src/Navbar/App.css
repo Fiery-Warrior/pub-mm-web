@@ -122,7 +122,7 @@ and no smaller than ____px the terminal-output width can be no longer than 55px 
   top: 55px;
 }
 .icon-tor:hover {
-  color: #7E4799;
+  color: rgb(212, 93, 87); /*Slightly lighter red*/
 }
 /*Would have the border around icon light up instead of the icon itself*/
 /*.icon:hover {

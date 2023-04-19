@@ -7,11 +7,10 @@ import { IoLogoGameControllerB } from "react-icons/io"
 import { BsFillDoorOpenFill } from "react-icons/bs"
 import { BsPersonCircle } from "react-icons/bs"
 import { FaLaptopCode } from "react-icons/fa"
-import { CgTerminal } from "react-icons/cg"
 import { AiFillHome } from "react-icons/ai"
 import { BsGithub } from "react-icons/bs"
 import { NavLink } from "./NavbarElements";
-import { SiTorproject } from "react-icons/si"
+import { RiContactsBook2Fill } from "react-icons/ri"
 import Tooltip from '@mui/material/Tooltip';
 import { styled } from '@mui/material/styles';
 import logo from './logo.png';
@@ -83,8 +82,8 @@ return (
             </a>
 
 
-			<a href= "https://tor.calyxinstitute.org/" target="_blank">
-              <SiTorproject className='icon-tor' id ='tor'/>
+			<a href= "/contacts" target="_blank">
+              <RiContactsBook2Fill className='icon-tor' id ='tor'/>
             </a>
 
 			<>

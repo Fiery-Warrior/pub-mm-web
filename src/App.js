@@ -42,6 +42,8 @@ import Navbar from './Navbar';
 
 import Home from './pages/home';
 
+import Contact from './pages/Contacts/Contacts';
+
 import Pub from './pages/Pub/pub.js';
 
 function App() {
@@ -96,6 +98,7 @@ function App() {
                 <Route path='/FileDisplayphone' element={<FileDisplayphone/>} />
 
 
+                <Route path='/contacts' element={<Contact/>} />
 
                 
                 <Route path='/Home' element={<Home/>} />
