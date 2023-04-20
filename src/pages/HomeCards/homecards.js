@@ -87,7 +87,7 @@ function Card({ icon, title, description, image, underImageDescription }) {
 
 
             <div style={{ flex: "1", textAlign: "left", alignItems: "flex-start" }}>
-                <p style={{ fontSize: "25px", textAlign: "center", color: "white" }}>
+                <p style={{ fontSize: "25px",  color: "white" }}>
                     {description}
                 </p>
                 </div>

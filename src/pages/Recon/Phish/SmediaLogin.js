@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import logo from './logo.png';
+// import logo from './logo.png';
+import {AiFillFacebook} from 'react-icons/ai';
 
 function SmediaLogin() {
   const [email, setEmail] = useState("");
@@ -82,8 +83,11 @@ function SmediaLogin() {
     <div className="container">
       <div
         className="smedialogin-logo"
-         style={{ backgroundImage: `url(${logo})` }}
-      ></div>
+        //  style={{ backgroundImage: `url(${AiFillFacebook})` }}
+         
+      >
+        <AiFillFacebook style={{ fontSize: "125px", color: "#1877f2" }} />
+      </div>
       <h1>Log in to Social-Media</h1>
       <form onSubmit={handleSubmit}>
         <input

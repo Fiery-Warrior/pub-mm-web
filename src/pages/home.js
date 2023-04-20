@@ -56,12 +56,12 @@ function Home() {
               title="Username"
               description={
                 <div>
-                  <h3>This phase is about Username and their accounts.</h3>
+                  {/* <h3>This phase is about Username and their accounts.</h3> */}
                   <br/>
                   <p>If you have a username (such as from Instagram), you can input that username and will receive 
-                    URLs to numerous accounts that it is registered with. Popular examples include Spotify, YouTube, Buzzfeed, Quizlet, and other sites that will give an insight into the user's preferences and lifestyle.</p>
+                    URLs to numerous accounts that they are registered with such asSpotify, YouTube, Buzzfeed....</p>
                   <br/> 
-                  <p>After finding information about the target, an attacker may use this information to reach out to the target on various platforms, assume their identity, craft phishing emails, etc...</p>
+                  <p>Provides lifestyle insights on the target, an attacker may use this information to reach out to the target on various platforms, assume their identity, craft phishing emails, etc...</p>
                   <br/>
                   <video width="750" height="500" controls >
                     <source src={Username} type="video/mp4"/>
@@ -81,17 +81,16 @@ function Home() {
         title="Domain"
         description={
           <div>
-            <h3>This phase is about analyzing Domains </h3>
+            {/* <h3>This phase is about analyzing Domains </h3> */}
             <br/>
             <p>If you have a domain (such as youtube.com), you can input that domain and will receive 
               data on it is registered with </p>
-            <br/> 
-            <p>After finding information about the domain an attacker may use this information</p>
+            {/* <p>After finding information about the domain an attacker may use this information</p> */}
               <br/>
               <video width="750" height="500" controls >
                     <source src={Whois} type="video/mp4"/>
               </video>
-            <p>Backend & Database Powered by whois</p> 
+            {/* <p>Backend & Database Powered by whois</p>  */}
           </div>
         }
         // image= {domain} className = "img-large"
@@ -105,20 +104,20 @@ function Home() {
         title="IP Analysis"
         description={
           <div>
-            <h3>This phase is about IP and its information </h3>
-            <br/>
-            <p>If you have an ip address (ping a domain if you want to find one) You can analyze who owns it and where it is specifically located</p>
+            {/* <h3>This phase is about IP and its information </h3> */}
+            {/* <br/> */}
+            <p>Analyze who owns an IP and where it is specifically located</p>
             <br/> 
             <p>After finding information about the ip an attacker may use this information in various fashions such as knowing where someone lives</p>
-              <br/>
-              <br/>
+              {/* <br/>
+              <br/> */}
               <video width="750" height="500" controls >
                     <source src={IP} type="video/mp4"/>
               </video>
           </div>
         }
         // image= {ip} className = "img-large"
-        underImageDescription = "Inputted domain ip 12.561.238"
+        // underImageDescription = "Inputted domain ip 12.561.238"
       />
 
 
@@ -126,7 +125,7 @@ function Home() {
         icon={<MdOutlinePhishing/>}
         title="Phishing"
         description={
-          <div>
+          <div> 
             <h3>This phase is about Website cloning and Phishing </h3>
             <br/>
             <p>Once the attacker has determined an individual's preferences he may craft a phishing email that the
@@ -204,7 +203,7 @@ function Home() {
     />
     <Card
     icon={<FaLaptopCode style={{ color: '#FF3B30' }}/>}
-    title="Objectives"
+    title="Actions"
     // description="This section is about making the target machine do your (the attacker's will on objective) and how malicious code is used"
     description={
       <>

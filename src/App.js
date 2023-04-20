@@ -37,6 +37,7 @@ import FileDisplaydomain from './pages/Recon/domain/FileDisplaydomain';
 import Phish from './pages/Recon/Phish/Phish';
 import SmediaLogin from './pages/Recon/Phish/SmediaLogin';
 import FileDisplayphone from './pages/Recon/phone/FileDisplayphone';
+import Aimost from './pages/Recon/Aiall/Aimost';
 
 import Navbar from './Navbar';
 
@@ -96,6 +97,7 @@ function App() {
                 <Route path='/Phish' element={<Phish/>} />
                 <Route path='/SmediaLogin' element={<SmediaLogin/>} />
                 <Route path='/FileDisplayphone' element={<FileDisplayphone/>} />
+                <Route path='/Aimost' element={<Aimost/>} />
 
 
                 <Route path='/contacts' element={<Contact/>} />

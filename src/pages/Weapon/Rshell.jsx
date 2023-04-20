@@ -35,7 +35,7 @@ export default function BasicCard() {
             height: '230px',
           },
 
-          '@media (max-width: 1415px)': {
+          '@media (max-width: 1215px)': {
             top: '175px',
             minWidth: 250,
             height: '200px',
@@ -43,7 +43,7 @@ export default function BasicCard() {
 
           },
 
-          '@media (max-width: 1215px)': {
+          '@media (max-width: 1115px)': {
             top: '170px',
             minWidth: 250,
             height: '180px',

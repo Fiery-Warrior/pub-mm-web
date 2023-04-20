@@ -4,7 +4,7 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import { MdOutlineEmail  } from 'react-icons/md';
+import { BsChatRightDots  } from 'react-icons/bs';
 
 import './recon.css';
 
@@ -37,7 +37,7 @@ export default function BasicCard() {
 
         },
 
-        '@media (max-width: 1415px)': {
+        '@media (max-width: 1215px)': {
           top: '175px',
           minWidth: 250,
           height: '200px',
@@ -45,7 +45,7 @@ export default function BasicCard() {
 
         },
 
-        '@media (max-width: 1215px)': {
+        '@media (max-width: 1115px)': {
           top: '170px',
           minWidth: 250,
           height: '180px',
@@ -64,13 +64,13 @@ export default function BasicCard() {
           <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
             {hovered ? (
               <>
-                <MdOutlineEmail  size={72} />
+                <BsChatRightDots  size={72} />
                 <Typography variant="h5" component="div" className='title' sx={{ mt: 1 }}>
-                  Email
+                  AI ChatBot
                 </Typography>
               </>
             ) : (
-              <MdOutlineEmail  size={130} />
+              <BsChatRightDots  size={130} />
             )}
           </Box>
         </CardContent>

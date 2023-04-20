@@ -4,7 +4,7 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import { BsBluetooth } from 'react-icons/bs';
+import { GiDualityMask } from 'react-icons/gi';
 
 import './recon.css';
 
@@ -21,7 +21,7 @@ export default function BasicCard() {
   };
 
   return (
-    <a href="]/filedisplayphone/" target="_blank">
+    <a href="/filedisplayphone/" target="_blank">
       <Card
       sx={{
         minWidth: 455,
@@ -38,7 +38,7 @@ export default function BasicCard() {
 
         },
 
-        '@media (max-width: 1415px)': {
+        '@media (max-width: 1215px)': {
           top: '425px',
           minWidth: 250,
           height: '200px',
@@ -46,7 +46,7 @@ export default function BasicCard() {
 
         },
         
-        '@media (max-width: 1215px)': {
+        '@media (max-width: 1115px)': {
           top: '405px',
           minWidth: 250,
           height: '180px',
@@ -65,13 +65,13 @@ export default function BasicCard() {
           <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
             {hovered ? (
               <>
-                <BsBluetooth   size={72} />
+                <GiDualityMask   size={72} />
                 <Typography variant="h5" component="div" className='title' sx={{ mt: 1 }}>
-                  Bluetooth
+                  AI Deep Fake
                 </Typography>
               </>
             ) : (
-              <BsBluetooth   size={130} />
+              <GiDualityMask   size={130} />
             )}
           </Box>
         </CardContent>
