@@ -29,10 +29,22 @@ export default function BasicCard() {
           position: 'absolute',
           top: '150px',
           left: '50px',
-          '@media (max-width: 1515px)': {
+
+          '@media (max-width: 1508px)': {
+            minWidth: 350,
+            left: '80px',
+            height: '230px',//'14em' //'33vh'
+            
+          },
+
+          '@media (max-width: 1493px)': {
+            // minWidth: 350,
+            // left: '75px',
+            // height: '225px',
             minWidth: 350,
             left: '80px',
             height: '230px',
+            
           },
 
           '@media (max-width: 1215px)': {

@@ -30,7 +30,7 @@ export default function BasicCard() {
         top: '150px',
         left: '530px',
 
-        '@media (max-width: 1515px)': {
+        '@media (max-width: 1508px)': {
           left: '465px',
           minWidth: 350,
           height: '230px',

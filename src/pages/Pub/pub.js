@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './pub.css';
+import Full from '../HomeCards/videos/Full.mp4';
 
 function Pub() {
   const [title, setTitle] = useState("The Website for Security Educators");
@@ -26,7 +27,7 @@ function Pub() {
             <li><a href="#">Home</a></li>
             <li><a href="/home" target="_blank">Features</a></li>
             <li><a href="https://github.com/Fiery-Warrior/mm_pythonweb" target="_blank">GitHub</a></li>
-            <li><a href="/contacts">Contact Us</a></li>
+            <li><a href="/contacts">Contact Me</a></li>
           </ul>
         </nav>
       </header>
@@ -56,82 +57,99 @@ function Pub() {
             <p>Join the Moriarty community and learn about Offensive Security for Education purposes Only. Step-by-step process of Kill-chain including launching and controlling machine from localhost website</p>
           </div>
         </section>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
 
 
+        {/* <section classsName = "video-container">
+        <video width="750" height="500" controls>
+          <source src={Full} type="video/mp4"/>
+        </video>
+        </section> */}
 
 
 {/**Cyber Kill Chain Explanation */}
 <section>
   
+
+
     <div class="cards-container">
 
         <div class="card">
           <h2>Reconnaissance</h2>
           {/* <img src="/reconsherlock.png" alt="Sherlock-recon" id="sherlock-recon-img"/> */}
-          <p>Input one piece of data Outputs into a detailed analysis of the target</p>
+            <p>
+            Use various techniques to gather info about the target
+            </p>
           <div class="card-details">
             <br/>
-          {/**<p>Requires minimal user input and provides a detailed dossier on the target, including information such as usernames, emails, phone numbers, IP addresses, and more. .</p>
-             */}
             <p>
-              Usernames Outputs All Accounts urls <br/>
-              Domain URL Outputs Registered data
-              Email Address Outputs Phone numbers
-              Phone Number Outputs Information
+              Target's domain names, IP addresses, <br/>
+              AI deepfake or Facebook Whaling 
             
             </p>
-            {/* <a href="#" class="button">See demo</a> */}
+            <a href="/reconicon" target="_blank" class="button">See demo</a>
           </div>
         </div>
 
         <div class="card">
           <h2>Weaponization</h2>
           {/* <img src="/weap.png" alt="Sherlock-weap" id="sherlock-weap-img"/> */}
-          <p>basic how moriarty matrix handles stage: Weaponization</p>
+          <p>Using information from the reconnaissance to create malware</p>
           <div class="card-details">
             <br/>
-            <p>more in depth on how it handles this stage-in this matrix-what the benefit is-what user gets</p>
-            {/* <a href="#" class="button">See demo</a> */}
+            <p>
+              Reverse shells, viruses, DDoS attacks, <br/>
+              ransomware, keyloggers, or worms
+            </p>
+            <a href="/weapon" target="_blank" class="button">See demo</a>
           </div>
         </div>
 
         <div class="card">
           <h2>Delivery</h2>
-          <p>basic how moriarty matrix handles stage: Delivery</p>
+          <p>Deliver the 'weapon' to the target's system</p>
           <div class="card-details">
             <br/>
-            <p>more in depth on how it handles this stage-in this matrix-what the benefit is-what user gets</p>
-            {/* <a href="#" class="button">See demo</a> */}
+            <p>
+            Email attachments, malicious websites,<br/>
+            FTP, Bluetooth, or USB drives
+            </p>
+            <a href="/delivery" target="_blank" class="button">See demo</a>
           </div>
         </div>
 
         <div class="card">
           <h2>Install/Exploit</h2>
-          <p>basic how moriarty matrix handles stages: Install/Exploit</p>
+          <p>Use 'weapon' to exploit a specific vulnerability in the target's system and install</p>
           <div class="card-details">
             <br/>
-            <p>more in depth on how it handles this stage-in this matrix-what the benefit is-what user gets</p>
-            {/* <a href="#" class="button">See demo</a> */}
+            <p>Using a weapon to exploit a vulnerability in the target's system by an exploit database</p>
+            <a href="/exploit" target="_blank" class="button">See demo</a>
           </div>
         </div>
 
         <div class="card">
           <h2>Command & Control</h2>
-          <p>basic how moriarty matrix handles stage: Command & Control</p>
+          <p>Gain inital control of the target's system</p>
           <div class="card-details">
             <br/>
-            <p>more in depth on how it handles this stage-in this matrix-what the benefit is-what user gets</p>
-            {/* <a href="#" class="button">See demo</a> */}
+            <p>Establish communication with the target's system and maintain control</p>
+            <a href="/exploit" target="_blank" class="button">See demo</a>
             </div>
               </div>
 
               <div class="card">
                 <h2>Actions on Objectives</h2>
-                <p>basic how moriarty matrix handles stage: Actions on Objectives</p>
+                <p>Attacker achieves their ultimate goal</p>
                 <div class="card-details">
                   <br/>
-                  <p>more in depth on how it handles this stage-in this matrix-what the benefit is-what user gets</p>
-                  {/* <a href="#" class="button">See demo</a> */}
+                  <p>May use the reverse shell tool to establish a connection to the target's system and retrieve the desired informatio</p>
+                  <a href="/objectives" target="_blank" class="button">See demo</a>
                 </div>
               </div>
             </div>      

@@ -4,7 +4,7 @@ import { IoPerson } from 'react-icons/io5';
 import { CgWebsite } from 'react-icons/cg';
 import { MdSignalWifiStatusbarConnectedNoInternet4 } from 'react-icons/md';
 import { MdOutlinePhishing } from 'react-icons/md';
-import { BsBluetooth } from 'react-icons/bs';
+import { GiDualityMask } from 'react-icons/gi';
 import { GiAnvilImpact } from "react-icons/gi";
 import { TfiEmail } from "react-icons/tfi";
 import { FaDownload } from "react-icons/fa"
@@ -57,12 +57,11 @@ function Home() {
               description={
                 <div>
                   {/* <h3>This phase is about Username and their accounts.</h3> */}
-                  <br/>
                   <p>If you have a username (such as from Instagram), you can input that username and will receive 
                     URLs to numerous accounts that they are registered with such asSpotify, YouTube, Buzzfeed....</p>
-                  <br/> 
+                  {/* <br/> 
                   <p>Provides lifestyle insights on the target, an attacker may use this information to reach out to the target on various platforms, assume their identity, craft phishing emails, etc...</p>
-                  <br/>
+                  <br/> */}
                   <video width="750" height="500" controls >
                     <source src={Username} type="video/mp4"/>
                   </video>
@@ -82,11 +81,9 @@ function Home() {
         description={
           <div>
             {/* <h3>This phase is about analyzing Domains </h3> */}
-            <br/>
-            <p>If you have a domain (such as youtube.com), you can input that domain and will receive 
-              data on it is registered with </p>
+            <p>Enter domain (such as youtube.com), you can input that domain and will receive 
+              data on it is registered </p>
             {/* <p>After finding information about the domain an attacker may use this information</p> */}
-              <br/>
               <video width="750" height="500" controls >
                     <source src={Whois} type="video/mp4"/>
               </video>
@@ -107,8 +104,8 @@ function Home() {
             {/* <h3>This phase is about IP and its information </h3> */}
             {/* <br/> */}
             <p>Analyze who owns an IP and where it is specifically located</p>
-            <br/> 
-            <p>After finding information about the ip an attacker may use this information in various fashions such as knowing where someone lives</p>
+            {/* <br/>  */}
+            {/* <p>After finding information about the ip an attacker may use this information in various fashions such as knowing where someone lives</p> */}
               {/* <br/>
               <br/> */}
               <video width="750" height="500" controls >
@@ -144,22 +141,18 @@ function Home() {
 
 
       <Card
-        icon={<BsBluetooth/>}
+        icon={<GiDualityMask/>}
         title="Bluetooth"
         description={
           <div>
-            <h3>This phase is about Bluetooth and its use for scanning nearby devices </h3>
+            <h3>Create Deepfake or an AI product </h3>
             <br/>
-            <p>If you have a domain (such as youtube.com), you can input that domain and will receive 
-              data on it is registered with </p>
-            <br/> 
-            <p>After finding information about the domain an attacker may use this information</p>
-              <br/>
-            <p>Backend & Database Powered by whois</p> 
+
+
           </div>
         }
-        image= {domain} className = "img-large"
-        underImageDescription = "Inputted domain url: youtube.com and outputted data"
+        // image= {domain} className = "img-large"
+        // underImageDescription = "Inputted domain url: youtube.com and outputted data"
       />
     </div>
   }
@@ -172,7 +165,7 @@ function Home() {
     icon={<GiAnvilImpact style={{ color: '#FF3B30' }}/>}
     title="Weapon"
     description="This section is about exploit and how it is important in cybersecurity."
-    image="https://raw.githubusercontent.com/qeeqbox/osint/main/readme/osint_logo.png"
+    // image=""
     />
     <Card
     icon={<TfiEmail style={{ color: '#FF3B30' }}/>}

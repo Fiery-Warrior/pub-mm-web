@@ -254,6 +254,14 @@ text-align: center;
   padding: 8rem 2rem;
   text-align: center;
   }
+
+  .pub .video-container {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  
   
   .pub .blog h2 {
   font-size: 4rem;
@@ -390,3 +398,5 @@ transition: background-color 0.3s ease;
 .pub .button:hover {
 background-color: #005ea2;
 }
+
+

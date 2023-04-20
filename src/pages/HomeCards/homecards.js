@@ -86,7 +86,7 @@ function Card({ icon, title, description, image, underImageDescription }) {
         >
 
 
-            <div style={{ flex: "1", textAlign: "left", alignItems: "flex-start" }}>
+            <div style={{ flex: "1", textAlign: "center", alignItems: "flex-start" }}>
                 <p style={{ fontSize: "25px",  color: "white" }}>
                     {description}
                 </p>
@@ -101,7 +101,7 @@ function Card({ icon, title, description, image, underImageDescription }) {
                         style={{ maxWidth: "100%", marginTop: "20px" }}
                     />
                     {underImageDescription && (
-                        <p style={{ fontSize: "20px", textAlign: "center", color: "white" }}>
+                        <p style={{ fontSize: "20px", textAlign: "center" , color: "white" }}>
                         {underImageDescription}
                         </p>
                     )}
