@@ -17,4 +17,4 @@ For educational purposes only (any mis-uses of this project is ONLY the user's f
 - What is the motivation for this project? 
   - To create awareness of the hacking-lifecycle so it better prepares students, employees, cyber-enthusiasts, and security testers. 
   
-  - Visit [https://github.com/Fiery-Warrior/mm_pythonweb](https://github.com/Fiery-Warrior/mm_pythonweb) to see the entire project
+  - Visit [https://github.com/Fiery-Warrior/mm_pythonweb](https://github.com/Fiery-Warrior/mm_pythonweb) to see the entire project outline
