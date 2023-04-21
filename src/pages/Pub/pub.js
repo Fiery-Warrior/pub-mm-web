@@ -24,7 +24,7 @@ function Pub() {
         {/*<h1>Moriarty Matrix</h1>*/}
         <nav>
           <ul>
-            <li><a href="#">Home</a></li>
+            {/* <li><a href="#">Home</a></li> */}
             <li><a href="/home" target="_blank">Features</a></li>
             <li><a href="https://github.com/Fiery-Warrior/mm_pythonweb" target="_blank">GitHub</a></li>
             <li><a href="/contacts">Contact Me</a></li>
