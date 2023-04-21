@@ -48,6 +48,9 @@ import Contact from './pages/Contacts/Contacts';
 import Pub from './pages/Pub/pub.js';
 // import { Switch } from '@mui/material';
 
+
+import Connection from './pages/Pyback/Connection';
+
 function App() {
   const [showTerminal, setShowTerminal] = useState(false);
   
@@ -109,7 +112,11 @@ function App() {
                 <Route path='/Home' element={<Home/>} />
 
 
-                <Route path='/Pub' element={<Pub/>} />
+                <Route path='/' element={<Pub/>} /> {/**Removed /Pub and made just '/' so that it would show as the deafult page at  http://localhost:3000/ but i still need to edit the links from clicked on /Pub to just '/' */}
+
+                {/**Backend so will only show video clips in frontend */}
+                <Route path='/Connections' element={<Connection/>} />
+
 
 
 
