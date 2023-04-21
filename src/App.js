@@ -50,6 +50,9 @@ import Pub from './pages/Pub/pub.js';
 
 
 import Connection from './pages/Pyback/Connection';
+import Username from './pages/Pyback/Username';
+import Domain from './pages/Pyback/Domain';
+import Ip from './pages/Pyback/Ip';
 
 function App() {
   const [showTerminal, setShowTerminal] = useState(false);
@@ -116,6 +119,9 @@ function App() {
 
                 {/**Backend so will only show video clips in frontend */}
                 <Route path='/Connections' element={<Connection/>} />
+                <Route path='/Username' element={<Username/>} />
+                <Route path='/Domain' element={<Domain/>} />
+                <Route path='/Ip' element={<Ip/>} />
 
 
 

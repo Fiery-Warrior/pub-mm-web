@@ -20,7 +20,7 @@ export default function BasicCard() {
   };
 
   return (
-    <a href="/sherlock/search/" target="_blank">
+    <a href="/username" target="_blank">
       <Card
         sx={{
           minWidth: 455,
@@ -77,7 +77,7 @@ export default function BasicCard() {
         </CardContent>
         {hovered && (
           <CardActions>
-            <a href="/sherlock/search/" target="_blank">
+            <a href="/username" target="_blank">
             </a>
           </CardActions>
         )}

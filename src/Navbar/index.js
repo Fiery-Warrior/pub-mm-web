@@ -49,7 +49,7 @@ return (
 
 
 			
-			<a href="/Pub" target="_blank">
+			<a href="/" target="_blank"> {/**Was /Pub removed though so '/' this is the landing page */}
 			<img src={logo} alt="logo" style={{width: '200px', height: '35px'}} className='logo-moriarty'/>
 			</a>
 

@@ -17,7 +17,7 @@ import ip from './HomeCards/images/ip.png';
 import clone from './HomeCards/images/clone.png';
 import Card from "./HomeCards/homecards";
 
-import Username from './HomeCards/videos/Username.mp4';
+import Username from './HomeCards/videos/Usernames.mp4';
 import Whois from './HomeCards/videos/Whois.mp4';
 import Connections from './HomeCards/videos/Connections.mp4';
 import Actions from './HomeCards/videos/Actions.mp4';

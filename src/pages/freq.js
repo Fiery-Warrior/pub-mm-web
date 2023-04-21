@@ -1,5 +1,5 @@
 import React from 'react';
-import Username from './HomeCards/videos/Username.mp4';
+import Username from './HomeCards/videos/Usernames.mp4';
 
 const Freq = () => {
 return (

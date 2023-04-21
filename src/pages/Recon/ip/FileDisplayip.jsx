@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+
 function FileDisplayip() {
   const [ipAddress, setIpAddress] = useState('');
   const [ipInfo, setIpInfo] = useState(null);
@@ -26,7 +27,7 @@ function FileDisplayip() {
     <div>
       <form onSubmit={handleSubmit}>
         <label>
-          Enter an IP address:
+          Enter an IP address (Ex: 172.56.7.21):
           <input
             type="text"
             value={ipAddress}
@@ -57,6 +58,7 @@ function FileDisplayip() {
           <p>VPN: {ipInfo.vpn ? 'Yes' : 'No'}</p>
           <p>Hosting: {ipInfo.hosting ? 'Yes' : 'No'}</p> */}
         </div>
+        
       )}
 
     </div>

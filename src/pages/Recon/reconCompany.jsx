@@ -20,7 +20,7 @@ export default function BasicCard() {
   };
 
   return (
-    <a href="/whois/" target="_blank">
+    <a href="/domain/" target="_blank">
     <Card
       sx={{
         minWidth: 455,
@@ -76,7 +76,7 @@ export default function BasicCard() {
         </CardContent>
         {hovered && (
           <CardActions>
-            <a href="/whois/" target="_blank">
+            <a href="/domain/" target="_blank">
             </a>
           </CardActions>
         )}
