@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import NavBarTop from './Navbar/NavBarTop.js';
 
-import { BrowserRouter as Router, Routes, Route}
+import { BrowserRouter as Router, Routes, Route }
 from 'react-router-dom';
 import Recon from './pages/reconicon';
 import Weapon from './pages/weapon';
@@ -46,6 +46,7 @@ import Home from './pages/home';
 import Contact from './pages/Contacts/Contacts';
 
 import Pub from './pages/Pub/pub.js';
+// import { Switch } from '@mui/material';
 
 function App() {
   const [showTerminal, setShowTerminal] = useState(false);
@@ -55,9 +56,11 @@ function App() {
     <div className="App">
       <div className ="top">
        {/* <NavBarTop/>*/}
-          
             <Router>
+
+
               <Navbar/>
+
             <Routes>
 
                 {/* Card Body Pages */}

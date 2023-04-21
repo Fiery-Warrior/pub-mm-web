@@ -23,36 +23,66 @@ export default function BasicCard() {
     <a href="/filedisplayemail/" target="_blank">
       <Card
         sx={{
+          // minWidth: 455,
+          // width: '300px',
+          // height: '275px',
+          // position: 'absolute',
+          // top: '150px',
+          // left: '50px',
+          // '@media (max-width: 1515px)': {
+          //   minWidth: 350,
+          //   left: '80px',
+          //   height: '230px',
+          // },
+
+          // '@media (max-width: 1215px)': {
+          //   top: '175px',
+          //   minWidth: 250,
+          //   height: '200px',
+          //   width: '320px',
+
+          // },
+
+          // '@media (max-width: 1115px)': {
+          //   top: '170px',
+          //   minWidth: 250,
+          //   height: '180px',
+          //   width: '250px',
+          //   left: '9%',
+
+          // },
           minWidth: 455,
           width: '300px',
           height: '275px',
           position: 'absolute',
           top: '150px',
           left: '50px',
-          '@media (max-width: 1515px)': {
+
+          '@media (max-width: 1508px)': {
             minWidth: 350,
             left: '80px',
-            height: '230px',
+            height: '230px',//'14em' //'33vh'
+            
           },
 
-          '@media (max-width: 1215px)': {
-            top: '175px',
-            minWidth: 250,
-            height: '200px',
-            width: '320px',
+          // '@media (max-width: 1530px)': {
+          //   minWidth: 350,
+          //   left: '80px',
+          //   height: '230px',
+          // },
 
+          /**Once it becomes 1215px then it goes to the  @ media (max-width: 1493px)*/
+          '@media (max-width: 1215px)': {
+            left: '35px',
+            minWidth: 330,
+            height: '210px',
           },
 
           '@media (max-width: 1115px)': {
-            top: '170px',
-            minWidth: 250,
-            height: '180px',
-            width: '250px',
-            left: '9%',
-
+            left: '30px',
+            minWidth: 310,
+            height: '210px',
           },
-
-
         }}
         className="card"
         onMouseEnter={handleMouseEnter}

@@ -1,0 +1,190 @@
+import React, { useState, useEffect } from 'react';
+import './pub.css';
+import Full from '../HomeCards/videos/Full.mp4';
+
+function Pub() {
+  const [title, setTitle] = useState("The Website for Security Educators");
+  const titles = ["The Website for Security Teams", "The Website for Sysadmins", "The Website for Learners", "The Website for Engineers"];
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setTitle(titles[Math.floor(Math.random() * titles.length)]);
+    }, 2700); /*Time before next message is displayed*/
+    return () => clearInterval(intervalId);
+  }, [titles]);
+
+
+  return (
+    <div className="app-container pub">
+      <header>
+      <a href = "/home" target="_blank">
+          <img src="/logo.png" alt="logo" style={{width: '250px', height: '45px'}} />
+        </a>
+        {/* <img src="/logo.png" alt="logo" style={{width: '250px', height: '45px'}} /> */}
+        {/*<h1>Moriarty Matrix</h1>*/}
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="/home" target="_blank">Features</a></li>
+            <li><a href="https://github.com/Fiery-Warrior/mm_pythonweb" target="_blank">GitHub</a></li>
+            <li><a href="/contacts">Contact Me</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+
+
+      <section className="intro">
+          <div className="intro-content">
+            {/* <h1>Moriarty Matrix</h1> */}
+            <p>{title}</p>
+          </div>
+        </section>
+        <section className="features">
+          <div className="feature-card">
+            <i className="fas fa-shield-alt"></i>
+            <h3>Cyber-Kill-Chain</h3>
+            <p>Moriarty follows the Cyber Kill Chain by Lockheed Martin and the MITRE ATT&CK Matrix. Moriarty goes mainly through the seven stages of the Cyber kill chain</p>
+          </div>
+          <div className="feature-card">
+            <i className="fas fa-terminal"></i>
+            <h3>Security-focused</h3>
+            <p>Moriarty is designed to be a secure and privacy-focused web-app, with built-in tools for penetration testing and digital forensics.</p>
+          </div>
+          <div className="feature-card">
+            <i className="fas fa-globe"></i>
+            <h3>Web UI/UX</h3>
+            <p>Join the Moriarty community and learn about Offensive Security for Education purposes Only. Step-by-step process of Kill-chain including launching and controlling machine from localhost website</p>
+          </div>
+        </section>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+
+        {/* <section classsName = "video-container">
+        <video width="750" height="500" controls>
+          <source src={Full} type="video/mp4"/>
+        </video>
+        </section> */}
+
+
+{/**Cyber Kill Chain Explanation */}
+<section>
+  
+
+
+    <div class="cards-container">
+
+        <div class="card">
+          <h2>Reconnaissance</h2>
+          {/* <img src="/reconsherlock.png" alt="Sherlock-recon" id="sherlock-recon-img"/> */}
+            <p>
+            Use various techniques to gather info about the target
+            </p>
+          <div class="card-details">
+            <br/>
+            <p>
+              Target's domain names, IP addresses, <br/>
+              AI deepfake or Facebook Whaling 
+            
+            </p>
+            <a href="/reconicon" target="_blank" class="button">See demo</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Weaponization</h2>
+          {/* <img src="/weap.png" alt="Sherlock-weap" id="sherlock-weap-img"/> */}
+          <p>Using information from the reconnaissance to create malware</p>
+          <div class="card-details">
+            <br/>
+            <p>
+              Reverse shells, viruses, DDoS attacks, <br/>
+              ransomware, keyloggers, or worms
+            </p>
+            <a href="/weapon" target="_blank" class="button">See demo</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Delivery</h2>
+          <p>Deliver the 'weapon' to the target's system</p>
+          <div class="card-details">
+            <br/>
+            <p>
+            Email attachments, malicious websites,<br/>
+            FTP, Bluetooth, or USB drives
+            </p>
+            <a href="/delivery" target="_blank" class="button">See demo</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Install/Exploit</h2>
+          <p>Use 'weapon' to exploit a specific vulnerability in the target's system and install</p>
+          <div class="card-details">
+            <br/>
+            <p>Using a weapon to exploit a vulnerability in the target's system by an exploit database</p>
+            <a href="/exploit" target="_blank" class="button">See demo</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Command & Control</h2>
+          <p>Gain inital control of the target's system</p>
+          <div class="card-details">
+            <br/>
+            <p>Establish communication with the target's system and maintain control</p>
+            <a href="/exploit" target="_blank" class="button">See demo</a>
+            </div>
+              </div>
+
+              <div class="card">
+                <h2>Actions on Objectives</h2>
+                <p>Attacker achieves their ultimate goal</p>
+                <div class="card-details">
+                  <br/>
+                  <p>May use the reverse shell tool to establish a connection to the target's system and retrieve the desired informatio</p>
+                  <a href="/objectives" target="_blank" class="button">See demo</a>
+                </div>
+              </div>
+            </div>      
+</section>
+
+
+
+
+        <section className="cta">
+          <button>Download Moriarty</button>
+        </section>
+        <section className="blog">
+
+
+
+          <div className="blog-feed">
+
+          <h2>Recent Updates</h2>
+            <div className="blog-card" id="recon">
+              <h3>User Interface</h3>
+              <p>The latest version of Moriarty is now available for download, featuring numerous bug fixes and security enhancements.</p>
+              <a href="#">Read more</a>
+            </div>
+
+
+          </div>
+        </section>
+
+
+      </main>
+      <footer>
+        <p>Copyright © 2023 Moriarty Matrix</p>
+      </footer>
+    </div>
+  );
+}
+
+export default Pub;

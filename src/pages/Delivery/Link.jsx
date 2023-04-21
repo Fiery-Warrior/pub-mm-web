@@ -30,28 +30,30 @@ export default function BasicCard() {
         position: 'absolute',
         top: '150px',
         right: '50px',
-        '@media (max-width: 1515px)': {
+
+        '@media (max-width: 1508px)': {
           minWidth: 350,
           right: '80px',
+          height: '230px',
+        },
+
+        '@media (max-width: 1508px)': {
+          minWidth: 350,
+          left: '860px',
           height: '230px',
 
         },
 
         '@media (max-width: 1215px)': {
-          top: '175px',
-          minWidth: 250,
-          height: '200px',
-          width: '320px',
-
+          left: '765px',
+          minWidth: 330,
+          height: '210px',
         },
 
         '@media (max-width: 1115px)': {
-          top: '170px',
-          minWidth: 250,
-          height: '180px',
-          width: '250px',
-          right: '9%',
-
+          left: '760px',
+          minWidth: 310,
+          height: '210px',
         },
 
 

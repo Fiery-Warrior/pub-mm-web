@@ -23,13 +23,44 @@ export default function BasicCard() {
     <a href="/filedisplayworm/" target="_blank">
       <Card
       sx={{
+        // minWidth: 455,
+        // width: '300px',
+        // height: '275px',
+        // position: 'absolute',
+        // top: '465px',
+        // right: '50px',
+        // '@media (max-width: 1515px)': {
+        //   minWidth: 350,
+        //   right: '80px',
+        //   height: '230px',
+        //   top: '405px',
+
+        // },
+
+        // '@media (max-width: 1215px)': {
+        //   top: '425px',
+        //   minWidth: 250,
+        //   height: '200px',
+        //   width: '320px',
+          
+
+        // },
+
+        //   '@media (max-width: 1115px)': {
+        //     top: '405px',
+        //     minWidth: 250,
+        //     height: '180px',
+        //     width: '250px',
+        //     right: '9%',//'50px',
+  
+        //   },
         minWidth: 455,
         width: '300px',
         height: '275px',
         position: 'absolute',
         top: '465px',
         right: '50px',
-        '@media (max-width: 1515px)': {
+        '@media (max-width: 1508px)': {
           minWidth: 350,
           right: '80px',
           height: '230px',
@@ -37,24 +68,26 @@ export default function BasicCard() {
 
         },
 
-        '@media (max-width: 1215px)': {
-          top: '425px',
-          minWidth: 250,
-          height: '200px',
-          width: '320px',
+        '@media (max-width: 1508px)': {
+          minWidth: 350,
+          left: '860px',
+          height: '230px',
+          top: '405px',
           
+        },
+
+        '@media (max-width: 1215px)': {
+          left: '765px',
+          minWidth: 330,
+          height: '210px',
 
         },
 
-          '@media (max-width: 1115px)': {
-            top: '405px',
-            minWidth: 250,
-            height: '180px',
-            width: '250px',
-            right: '9%',//'50px',
-  
-          },
-
+        '@media (max-width: 1115px)': {
+          left: '760px',
+          minWidth: 310,
+          height: '210px',
+        },
       }}
         className="card"
         onMouseEnter={handleMouseEnter}

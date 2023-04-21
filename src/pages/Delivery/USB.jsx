@@ -24,6 +24,7 @@ export default function BasicCard() {
     <a href="/filedisplayusb/" target="_blank">
       <Card
       sx={{
+
         minWidth: 455,
         width: '300px',
         height: '275px',
@@ -55,7 +56,6 @@ export default function BasicCard() {
           left: '40%', //'470px',
 
         },
-
 
       }}
         className="card"
