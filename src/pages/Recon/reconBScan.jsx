@@ -38,21 +38,24 @@ export default function BasicCard() {
 
         },
 
-        '@media (max-width: 1215px)': {
-          top: '425px',
-          minWidth: 250,
-          height: '200px',
-          width: '320px',
+        '@media (max-width: 1493px)': {
+          minWidth: 350,
+          left: '80px',
+          height: '230px',
+          top: '405px',
 
+        },
+
+        '@media (max-width: 1215px)': {
+          left: '35px',
+          minWidth: 330,
+          height: '210px',
         },
         
         '@media (max-width: 1115px)': {
-          top: '405px',
-          minWidth: 250,
-          height: '180px',
-          width: '250px',
-          left: '9%',//'120px',
-
+          left: '30px',
+          minWidth: 310,
+          height: '210px',
         },
 
 

@@ -48,22 +48,17 @@ export default function BasicCard() {
         },
 
         '@media (max-width: 1215px)': {
-          top: '425px',
-          minWidth: 250,
-          height: '200px',
-          width: '320px',
-          
+          left: '765px',
+          minWidth: 330,
+          height: '210px',
 
         },
 
-          '@media (max-width: 1115px)': {
-            top: '405px',
-            minWidth: 250,
-            height: '180px',
-            width: '250px',
-            right: '9%',//'50px',
-  
-          },
+        '@media (max-width: 1115px)': {
+          left: '760px',
+          minWidth: 310,
+          height: '210px',
+        },
 
       }}
         className="card"
