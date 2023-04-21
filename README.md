@@ -16,5 +16,7 @@ For educational purposes only (any mis-uses of this project is ONLY the user's f
 
 - What is the motivation for this project? 
   - To create awareness of the hacking-lifecycle so it better prepares students, employees, cyber-enthusiasts, and security testers. 
+
+- Currently optimized for window sizes between 1095px and 1535px
   
   - Visit [https://github.com/Fiery-Warrior/mm_pythonweb](https://github.com/Fiery-Warrior/mm_pythonweb) to see the entire project outline
