@@ -20,3 +20,5 @@ For educational purposes only (any mis-uses of this project is ONLY the user's f
 - Currently optimized for window sizes between 1095px and 1535px
   
   - Visit [https://github.com/Fiery-Warrior/mm_pythonweb](https://github.com/Fiery-Warrior/mm_pythonweb) to see the entire project outline
+  
+  - To start locally: \pub-mm-web> npm start
