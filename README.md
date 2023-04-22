@@ -28,3 +28,9 @@ For educational purposes only (any mis-uses of this project is ONLY the user's f
 
 
 ```npm install react-scripts --save```
+
+```npm i react-router-dom```
+
+```npm install @mui/material @emotion/react @emotion/styled```
+
+```npm install react-icons --save```
