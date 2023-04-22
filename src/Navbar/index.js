@@ -49,7 +49,7 @@ return (
 
 
 			
-			<a href="/" target="_blank"> {/**Was /Pub removed though so '/' this is the landing page */}
+			<a href="/home" target="_blank"> {/*points to home */}
 			<img src={logo} alt="logo" style={{width: '200px', height: '35px'}} className='logo-moriarty'/>
 			</a>
 
@@ -77,7 +77,7 @@ return (
 
 
 
-            <a href="/home">
+            <a href="/">{/**Was /Pub removed though so '/' this is the landing page */}
             <AiFillHome className='icon-house' id = 'home' />
             </a>
 

