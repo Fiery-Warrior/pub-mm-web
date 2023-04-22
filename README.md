@@ -21,7 +21,7 @@ For educational purposes only (any mis-uses of this project is ONLY the user's f
   
   - Visit [https://github.com/Fiery-Warrior/mm_pythonweb](https://github.com/Fiery-Warrior/mm_pythonweb) to see the entire project outline
   
-  - To start locally: \pub-mm-web> npm start
+- To start locally: \pub-mm-web> npm start
 
 
 ## Dependencies
