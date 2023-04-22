@@ -64,13 +64,13 @@ return (
 					x
 				</a>
 
-				<a href="/hambar" class="navbar__item"><GiMagnifyingGlass /> Recon</a>
-				<a href="#" class="navbar__item"><GiAnvilImpact /> Weapon</a>
-				<a href="#" class="navbar__item"><TfiEmail /> Delivery</a>
-				<a href="#" class="navbar__item"><BsFillDoorOpenFill /> Exploit</a>
-				<a href="#" class="navbar__item"><FaDownload /> Install</a>
-				<a href="#" class="navbar__item"><IoLogoGameControllerB /> Control</a>
-				<a href="#" class="navbar__item"><FaLaptopCode /> Actions</a>
+				<a href="/hambar#recon" class="navbar__item"><GiMagnifyingGlass /> Recon</a>
+				<a href="/hambar#weapon" class="navbar__item"><GiAnvilImpact /> Weapon</a>
+				<a href="/hambar#delivery" class="navbar__item"><TfiEmail /> Delivery</a>
+				<a href="/hambar#exploit" class="navbar__item"><BsFillDoorOpenFill /> Exploit</a>
+				<a href="/hambar#install" class="navbar__item"><FaDownload /> Install</a>
+				<a href="/hambar#control" class="navbar__item"><IoLogoGameControllerB /> Control</a>
+				<a href="/hambar#actions" class="navbar__item"><FaLaptopCode /> Actions</a>
 
 
 			</div>

