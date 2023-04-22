@@ -18,12 +18,14 @@ import Freq from './pages/freq';
 import FileDisplaycontrol from './pages/Objectives/FileDisplaycontrol';
 
 
-import FileDisplayW from './pages/Weapon/FileDisplayW';
-import FileDisplaykey from './pages/Weapon/keylogger/FileDisplaykey';
-import FileDisplayworm from './pages/Weapon/worm/FileDisplayworm';
-import FileDisplayvirus from './pages/Weapon/virus/FileDisplayvirus';
-import FileDisplayjacking from './pages/Weapon/jacking/FileDisplayjacking';
-import FileDisplaydos from './pages/Weapon/dos/FileDisplaydos';
+
+import FileDisplayip from './pages/Recon/ip/FileDisplayip';
+import FileDisplaydomain from './pages/Recon/domain/FileDisplaydomain';
+import Phish from './pages/Recon/Phish/Phish';
+import SmediaLogin from './pages/Recon/Phish/SmediaLogin';
+import FileDisplayphone from './pages/Recon/phone/FileDisplayphone';
+import Aimost from './pages/Recon/Aiall/Aimost';
+
 
 import FileDisplaytext from './pages/Delivery/FileDisplaytext';
 import FileDisplaybluetooth from './pages/Delivery/bluetooth/FileDisplaybluetooth';
@@ -32,12 +34,18 @@ import FileDisplayftp from './pages/Delivery/ftp/FileDisplayftp';
 import FileDisplayusb from './pages/Delivery/usb/FileDisplayusb';
 import FileDisplayweb from './pages/Delivery/website-link/FileDisplayweb';
 
-import FileDisplayip from './pages/Recon/ip/FileDisplayip';
-import FileDisplaydomain from './pages/Recon/domain/FileDisplaydomain';
-import Phish from './pages/Recon/Phish/Phish';
-import SmediaLogin from './pages/Recon/Phish/SmediaLogin';
-import FileDisplayphone from './pages/Recon/phone/FileDisplayphone';
-import Aimost from './pages/Recon/Aiall/Aimost';
+
+
+import ReverseShell from './pages/Weapon/FileDisplayW';
+import FileDisplaykey from './pages/Weapon/keylogger/FileDisplaykey';
+import FileDisplayworm from './pages/Weapon/vba/FileDisplayworm';
+import FileDisplayvirus from './pages/Weapon/virus/FileDisplayvirus';
+import FileDisplayjacking from './pages/Weapon/jacking/FileDisplayjacking';
+import FileDisplaydos from './pages/Weapon/dos/FileDisplaydos';
+
+
+
+
 
 import Navbar from './Navbar';
 
@@ -84,13 +92,15 @@ function App() {
                 {/* Objectives */}
                 <Route path='/FileDisplaycontrol' element={<FileDisplaycontrol/>} /> {/*Control Page*/}
 
-                {/* Weapon Links */}
-                <Route path='/FileDisplayW' element={<FileDisplayW/>} /> {/*ReverseShell*/}
-                <Route path='/FileDisplaykey' element={<FileDisplaykey/>} />
-                <Route path='/FileDisplayvirus' element={<FileDisplayvirus/>} />
-                <Route path='/FileDisplayworm' element={<FileDisplayworm/>} />
-                <Route path='/FileDisplayjacking' element={<FileDisplayjacking/>} />
-                <Route path='/FileDisplaydos' element={<FileDisplaydos/>} />
+
+                {/* Recon Links */}
+                <Route path='/FileDisplayip' element={<FileDisplayip/>} />
+                <Route path='/FileDisplaydomain' element={<FileDisplaydomain/>} />
+                <Route path='/Phish' element={<Phish/>} />
+                <Route path='/SmediaLogin' element={<SmediaLogin/>} />
+                <Route path='/FileDisplayphone' element={<FileDisplayphone/>} />
+                <Route path='/Aimost' element={<Aimost/>} />
+
 
                 {/* Delivery Links  */}
                 <Route path='/FileDisplaytext' element={<FileDisplaytext/>} /> {/*ReverseShell*/}
@@ -100,13 +110,21 @@ function App() {
                 <Route path='/FileDisplayusb' element={<FileDisplayusb/>} />
                 <Route path='/FileDisplayweb' element={<FileDisplayweb/>} />
 
-                {/* Recon Links */}
-                <Route path='/FileDisplayip' element={<FileDisplayip/>} />
-                <Route path='/FileDisplaydomain' element={<FileDisplaydomain/>} />
-                <Route path='/Phish' element={<Phish/>} />
-                <Route path='/SmediaLogin' element={<SmediaLogin/>} />
-                <Route path='/FileDisplayphone' element={<FileDisplayphone/>} />
-                <Route path='/Aimost' element={<Aimost/>} />
+
+
+                {/* Weapon Links */}
+                <Route path='/FileDisplayW' element={<ReverseShell/>} /> {/*ReverseShell*/}
+                <Route path='/FileDisplaykey' element={<FileDisplaykey/>} />
+                <Route path='/FileDisplayvirus' element={<FileDisplayvirus/>} />
+                <Route path='/FileDisplayworm' element={<FileDisplayworm/>} />
+                <Route path='/FileDisplayjacking' element={<FileDisplayjacking/>} />
+                <Route path='/FileDisplaydos' element={<FileDisplaydos/>} />
+
+
+
+
+                {/* Control/Actions/Objectives Links */}
+
 
 
                 <Route path='/contacts' element={<Contact/>} />

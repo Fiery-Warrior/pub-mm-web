@@ -55,7 +55,7 @@ End Sub
         <h2 className="file-display-heading">Description</h2>
         <p className="file-display-description">
         <br/>macro that runs continuously until you close the Word document:<br/><br/>
-        This macro uses a Do While loop to continuously loop through all Excel files in the directory specified by the directoryPath variable, opens and closes each file, and then waits for 4 seconds before starting the loop again, slows down the computer
+        This VBA Macro uses a Do While loop to continuously loop through all Excel files in the directory specified by the directoryPath variable, opens and closes each file, and then waits for 4 seconds before starting the loop again, slows down the computer
         </p>
       </div>
     </div>
