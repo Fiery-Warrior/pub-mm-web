@@ -23,6 +23,8 @@ For educational purposes only (any mis-uses of this project is ONLY the user's f
   
 - To start locally: \pub-mm-web> npm start
 
+[![Watch the video](https://github.com/Fiery-Warrior/mm_pythonweb/blob/main/READmeSources/Images/cover.png)](https://clipchamp.com/watch/PUaV9L6zOLF)
+- Walk video of entire Pub site: https://clipchamp.com/watch/PUaV9L6zOLF
 
 ## Dependencies
 
