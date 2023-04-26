@@ -171,7 +171,7 @@ function Pub() {
             <div className="blog-card" id="recon">
               <h3>User Interface</h3>
               <p>The latest version of Moriarty is now available for download, featuring numerous bug fixes and security enhancements.</p>
-              <a href="#">Read more</a>
+              <a href="https://github.com/Fiery-Warrior/pub-mm-web/graphs/commit-activity" target="_blank">Read more</a>
             </div>
 
 

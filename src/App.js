@@ -56,7 +56,7 @@ import Contact from './pages/Contacts/Contacts';
 import Pub from './pages/Pub/pub.js';
 // import { Switch } from '@mui/material';
 
-
+import Action from './pages/Pyback/Action';
 import Connection from './pages/Pyback/Connection';
 import Username from './pages/Pyback/Username';
 import Domain from './pages/Pyback/Domain';
@@ -136,6 +136,7 @@ function App() {
                 <Route path='/' element={<Pub/>} /> {/**Removed /Pub and made just '/' so that it would show as the deafult page at  http://localhost:3000/ but i still need to edit the links from clicked on /Pub to just '/' */}
 
                 {/**Backend so will only show video clips in frontend */}
+                <Route path='/Action' element={<Action/>} />
                 <Route path='/Connections' element={<Connection/>} />
                 <Route path='/Username' element={<Username/>} />
                 <Route path='/Domain' element={<Domain/>} />
