@@ -4,11 +4,11 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import { GrVulnerability } from 'react-icons/gr';
+import { DiLinux } from 'react-icons/di';
 import './recon.css';
 
 
-export default function BasicCard() {
+export default function Bugtraq() {
   const [hovered, setHovered] = React.useState(false);
 
   const handleMouseEnter = () => {
@@ -20,22 +20,22 @@ export default function BasicCard() {
   };
 
   return (
-    <a href="/Nationalvulnerability/" target="_blank">
-      <Card
+    <a href="/filedisplaykey/" target="_blank">
+    <Card
       sx={{
         minWidth: 455,
         width: '300px',
         height: '275px',
         position: 'absolute',
-        top: '465px',
+        top: '150px',
         left: '530px',
+
         '@media (max-width: 1508px)': {
           left: '465px',
           minWidth: 350,
           height: '230px',
-          top: '405px',
-
         },
+
 
         '@media (max-width: 1215px)': {
           left: '400px',
@@ -48,8 +48,6 @@ export default function BasicCard() {
           minWidth: 310,
           height: '210px',
         },
-
-
       }}
         className="card"
         onMouseEnter={handleMouseEnter}
@@ -59,19 +57,19 @@ export default function BasicCard() {
           <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
             {hovered ? (
               <>
-                <GrVulnerability size={72} />
+                <DiLinux size={72} />
                 <Typography variant="h5" component="div" className='title' sx={{ mt: 1 }}>
-                  National vulnerability
+                  Linux
                 </Typography>
               </>
             ) : (
-              <GrVulnerability size={130} />
+              <DiLinux size={130} />
             )}
           </Box>
         </CardContent>
         {hovered && (
           <CardActions>
-            <a href="/Nationalvulnerability/" target="_blank">
+            <a href="/filedisplaykey/" target="_blank">
             </a>
           </CardActions>
         )}

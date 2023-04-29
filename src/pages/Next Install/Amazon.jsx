@@ -4,7 +4,8 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import { GrVulnerability } from 'react-icons/gr';
+import { BsFillFileEarmarkLock2Fill } from 'react-icons/bs';
+
 import './recon.css';
 
 
@@ -20,35 +21,72 @@ export default function BasicCard() {
   };
 
   return (
-    <a href="/Nationalvulnerability/" target="_blank">
+    <a href="/filedisplayjacking/" target="_blank">
       <Card
       sx={{
+        // minWidth: 455,
+        // width: '300px',
+        // height: '275px',
+        // position: 'absolute',
+        // top: '465px',
+        // left: '50px',
+        // '@media (max-width: 1515px)': {
+        //   minWidth: 350,
+        //   left: '80px',
+        //   height: '230px',
+        //   top: '405px',
+
+        // },
+
+        // '@media (max-width: 1215px)': {
+        //   top: '425px',
+        //   minWidth: 250,
+        //   height: '200px',
+        //   width: '320px',
+
+        // },
+        
+        // '@media (max-width: 1115px)': {
+        //   top: '405px',
+        //   minWidth: 250,
+        //   height: '180px',
+        //   width: '250px',
+        //   left: '9%',//'120px',
+
+        // },
         minWidth: 455,
         width: '300px',
         height: '275px',
         position: 'absolute',
         top: '465px',
-        left: '530px',
+        left: '50px',
         '@media (max-width: 1508px)': {
-          left: '465px',
           minWidth: 350,
+          left: '80px',
+          height: '230px',
+          top: '405px',
+
+        },
+
+        '@media (max-width: 1493px)': {
+          minWidth: 350,
+          left: '80px',
           height: '230px',
           top: '405px',
 
         },
 
         '@media (max-width: 1215px)': {
-          left: '400px',
+          left: '35px',
           minWidth: 330,
           height: '210px',
         },
-
+        
         '@media (max-width: 1115px)': {
-          left: '395px',
+          left: '30px',
           minWidth: 310,
           height: '210px',
         },
-
 
       }}
         className="card"
@@ -59,19 +97,19 @@ export default function BasicCard() {
           <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
             {hovered ? (
               <>
-                <GrVulnerability size={72} />
+                <BsFillFileEarmarkLock2Fill   size={72} />
                 <Typography variant="h5" component="div" className='title' sx={{ mt: 1 }}>
-                  National vulnerability
+                Amazon Web Server
                 </Typography>
               </>
             ) : (
-              <GrVulnerability size={130} />
+              <BsFillFileEarmarkLock2Fill   size={130} />
             )}
           </Box>
         </CardContent>
         {hovered && (
           <CardActions>
-            <a href="/Nationalvulnerability/" target="_blank">
+            <a href="/filedisplayjacking/" target="_blank">
             </a>
           </CardActions>
         )}
@@ -79,3 +117,4 @@ export default function BasicCard() {
     </a>
   );
 }
+

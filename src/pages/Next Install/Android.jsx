@@ -61,7 +61,7 @@ export default function BasicCard() {
               <>
                 <GrVulnerability size={72} />
                 <Typography variant="h5" component="div" className='title' sx={{ mt: 1 }}>
-                  National vulnerability
+                  Android
                 </Typography>
               </>
             ) : (
