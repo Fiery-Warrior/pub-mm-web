@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
-import NavBarTop from './Navbar/NavBarTop.js';
 
+import NavBarTop from './Navbar/NavBarTop.js'; //Do not comment out NavBarTop
 import { BrowserRouter as Router, Routes, Route }
 from 'react-router-dom';
 import Recon from './pages/reconicon';

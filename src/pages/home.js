@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
+import React from "react";
 import { GiMagnifyingGlass } from "react-icons/gi";
 import { IoPerson } from 'react-icons/io5';
 import { CgWebsite } from 'react-icons/cg';
@@ -12,8 +13,8 @@ import { IoLogoGameControllerB } from "react-icons/io"
 import { BsFillDoorOpenFill } from "react-icons/bs"
 import { FaLaptopCode } from "react-icons/fa"
 // import username from './HomeCards/images/username.png';
-import domain from './HomeCards/images/domain.png';
-import ip from './HomeCards/images/ip.png';
+// import domain from './HomeCards/images/domain.png';
+// import ip from './HomeCards/images/ip.png';
 import clone from './HomeCards/images/clone.png';
 import Card from "./HomeCards/homecards";
 
@@ -24,7 +25,7 @@ import Actions from './HomeCards/videos/Actions.mp4';
 import IP from './HomeCards/videos/IP.mp4';
 
 function Home() {
-  const [showVideo, setShowVideo] = useState(false);
+  // const [showVideo, setShowVideo] = useState(false);
 
   const linkStyle = {
     color: 'white',
@@ -123,8 +124,8 @@ function Home() {
         title="Phishing"
         description={
           <div> 
-            <h3>This phase is about Website cloning and Phishing </h3>
-            <br/>
+            {/* <h3>This phase is about Website cloning and Phishing </h3> */}
+            {/* <br/> */}
             <p>Once the attacker has determined an individual's preferences he may craft a phishing email that the
               has a greater chance of the target clicking on it. See use case below:
             </p>
@@ -135,14 +136,14 @@ function Home() {
             <p>This is considered active recon, and is explained for educational purposes only. if it is used: The Creator (and all who helped with this project) are exempt from any blame</p> 
           </div>
         }
-        image= {clone} className = "img-large" //image = "https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg"
-        underImageDescription = "Due to copyright issues I have used the title of social-media instead of any actual site"
+        image= {clone} className = "img-large"
+        underImageDescription = "Due to possible copyright issues I have used the title of social-media instead of any actual site"
       />
 
 
       <Card
         icon={<GiDualityMask/>}
-        title="Bluetooth"
+        title="AI DeepFake"
         description={
           <div>
             <h3>Create Deepfake or an AI product </h3>
