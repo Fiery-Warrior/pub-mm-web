@@ -41,11 +41,13 @@ function Pub() {
           </div>
         </section>
         <section className="features">
+
           <div className="feature-card">
             <i className="fas fa-shield-alt"></i>
             <h3>Cyber-Kill-Chain</h3>
             <p>Moriarty follows the Cyber Kill Chain by Lockheed Martin and the MITRE ATT&CK Matrix. Moriarty goes mainly through the seven stages of the Cyber kill chain</p>
           </div>
+          
           <div className="feature-card">
             <i className="fas fa-terminal"></i>
             <h3>Security-focused</h3>

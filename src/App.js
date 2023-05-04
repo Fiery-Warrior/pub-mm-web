@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 
+//Nav and Card Bodys
 import NavBarTop from './Navbar/NavBarTop.js'; //Do not comment out NavBarTop
 import { BrowserRouter as Router, Routes, Route }
 from 'react-router-dom';
@@ -17,8 +18,7 @@ import Freq from './pages/freq';
 
 import FileDisplaycontrol from './pages/Objectives/FileDisplaycontrol';
 
-
-
+//Recon
 import FileDisplayip from './pages/Recon/ip/FileDisplayip';
 import FileDisplaydomain from './pages/Recon/domain/FileDisplaydomain';
 import Phish from './pages/Recon/Phish/Phish';
@@ -26,7 +26,7 @@ import SmediaLogin from './pages/Recon/Phish/SmediaLogin';
 import FileDisplayphone from './pages/Recon/phone/FileDisplayphone';
 import Aimost from './pages/Recon/Aiall/Aimost';
 
-
+//Delivery
 import FileDisplaytext from './pages/Delivery/FileDisplaytext';
 import FileDisplaybluetooth from './pages/Delivery/bluetooth/FileDisplaybluetooth';
 import FileDisplayemail from './pages/Delivery/email/FileDisplayemail';
@@ -34,8 +34,7 @@ import FileDisplayftp from './pages/Delivery/ftp/FileDisplayftp';
 import FileDisplayusb from './pages/Delivery/usb/FileDisplayusb';
 import FileDisplayweb from './pages/Delivery/website-link/FileDisplayweb';
 
-
-
+//Weapon
 import ReverseShell from './pages/Weapon/FileDisplayW';
 import FileDisplaykey from './pages/Weapon/keylogger/FileDisplaykey';
 import FileDisplayworm from './pages/Weapon/vba/FileDisplayworm';
@@ -44,6 +43,10 @@ import FileDisplayjacking from './pages/Weapon/jacking/FileDisplayjacking';
 import FileDisplaydos from './pages/Weapon/dos/FileDisplaydos';
 
 
+//Exploit
+import Commonvuln from './pages/Next Exploit/commonvuln/FileDisplaycv';
+import CommonWeak from './pages/Next Exploit/commonweak/CommonWeak';
+import Exploitdb from './pages/Next Exploit/exploitdb/Exploitdb';
 
 
 
@@ -121,6 +124,10 @@ function App() {
                 <Route path='/FileDisplaydos' element={<FileDisplaydos/>} />
 
 
+                {/*Exploit Links */}
+                <Route path='/Commonvuln' element={<Commonvuln/>} />
+                <Route path='/CommonWeak' element={<CommonWeak/>} />
+                <Route path='/Exploitdb' element={<Exploitdb/>} />
 
 
                 {/* Control/Actions/Objectives Links */}

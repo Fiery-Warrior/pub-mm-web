@@ -171,17 +171,17 @@ function Home() {
     <Card
     icon={<TfiEmail style={{ color: '#FF3B30' }}/>}
     title="Delivery"
-    description="This section is about phishing and how it is important in cybersecurity."
+    description="Delivering the 'exploit'."
     />
     <Card
     icon={<BsFillDoorOpenFill style={{ color: '#FF3B30' }}/>}
     title="Exploit"
-    description="This section is about malware and how it is important in cybersecurity."
+    description="This section is about malware."
     />
     <Card
     icon={<FaDownload style={{ color: '#FF3B30' }}/>}
     title="Install"
-    description="This section is about install and how it is important in cybersecurity."
+    description="This section is about install the malware 'package'."
     />    
     <Card
     icon={<IoLogoGameControllerB style={{ color: '#FF3B30' }}/>}

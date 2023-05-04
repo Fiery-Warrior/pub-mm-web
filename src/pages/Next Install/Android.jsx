@@ -4,7 +4,7 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import { GrVulnerability } from 'react-icons/gr';
+import { GrAndroid } from 'react-icons/gr';
 import './recon.css';
 
 
@@ -59,13 +59,13 @@ export default function BasicCard() {
           <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
             {hovered ? (
               <>
-                <GrVulnerability size={72} />
+                <GrAndroid size={72} />
                 <Typography variant="h5" component="div" className='title' sx={{ mt: 1 }}>
                   Android
                 </Typography>
               </>
             ) : (
-              <GrVulnerability size={130} />
+              <GrAndroid size={130} />
             )}
           </Box>
         </CardContent>
