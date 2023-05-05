@@ -47,6 +47,7 @@ import FileDisplaydos from './pages/Weapon/dos/FileDisplaydos';
 import Commonvuln from './pages/Next Exploit/commonvuln/FileDisplaycv';
 import CommonWeak from './pages/Next Exploit/commonweak/CommonWeak';
 import Exploitdb from './pages/Next Exploit/exploitdb/Exploitdb';
+import CISA from './pages/Next Exploit/cisa/FileDisplaycisa';
 
 
 
@@ -128,6 +129,7 @@ function App() {
                 <Route path='/Commonvuln' element={<Commonvuln/>} />
                 <Route path='/CommonWeak' element={<CommonWeak/>} />
                 <Route path='/Exploitdb' element={<Exploitdb/>} />
+                <Route path='/CISA' element={<CISA/>} />
 
 
                 {/* Control/Actions/Objectives Links */}
