@@ -59,7 +59,7 @@ function Home() {
                 <div>
                   {/* <h3>This phase is about Username and their accounts.</h3> */}
                   <p>If you have a username (such as from Instagram), you can input that username and will receive 
-                    URLs to numerous accounts that they are registered with such asSpotify, YouTube, Buzzfeed....</p>
+                    URLs to numerous accounts that they are registered with such as Spotify, YouTube, Buzzfeed....</p>
                   {/* <br/> 
                   <p>Provides lifestyle insights on the target, an attacker may use this information to reach out to the target on various platforms, assume their identity, craft phishing emails, etc...</p>
                   <br/> */}

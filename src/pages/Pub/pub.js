@@ -1,6 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import './pub.css';
-import Full from '../HomeCards/videos/Full.mp4';
+
+import { GiMagnifyingGlass } from "react-icons/gi";
+import { GiAnvilImpact } from "react-icons/gi";
+import { TfiEmail } from "react-icons/tfi";
+import { BsFillDoorOpenFill } from "react-icons/bs"
+import { IoLogoGameControllerB } from "react-icons/io"
+import { FaLaptopCode } from "react-icons/fa"
+// import Full from '../HomeCards/videos/Full.mp4';
 
 function Pub() {
   const [title, setTitle] = useState("The Website for Security Educators");
@@ -82,16 +89,11 @@ function Pub() {
     <div class="cards-container">
 
         <div class="card">
-          <h2>Reconnaissance</h2>
-          {/* <img src="/reconsherlock.png" alt="Sherlock-recon" id="sherlock-recon-img"/> */}
-            <p>
-            Use various techniques to gather info about the target
-            </p>
+          {/* <h2>Reconnaissance</h2> */}<GiMagnifyingGlass className='icon'/>
           <div class="card-details">
             <br/>
             <p>
-              Target's domain names, IP addresses, <br/>
-              AI deepfake or Facebook Whaling 
+              Analyzes domain, IP, Phish, AI...
             
             </p>
             <a href="/reconicon" target="_blank" class="button">See demo</a>
@@ -99,58 +101,50 @@ function Pub() {
         </div>
 
         <div class="card">
-          <h2>Weaponization</h2>
-          {/* <img src="/weap.png" alt="Sherlock-weap" id="sherlock-weap-img"/> */}
-          <p>Using information from the reconnaissance to create malware</p>
+          {/* <h2>Weaponization</h2> */} <GiAnvilImpact className='icon'/>
           <div class="card-details">
             <br/>
             <p>
-              Reverse shells, viruses, DDoS attacks, <br/>
-              ransomware, keyloggers, or worms
+              Create and use differnt pre-built attacks
             </p>
             <a href="/weapon" target="_blank" class="button">See demo</a>
           </div>
         </div>
 
         <div class="card">
-          <h2>Delivery</h2>
-          <p>Deliver the 'weapon' to the target's system</p>
+          {/* <h2>Delivery</h2> */} <TfiEmail className='icon'/>
           <div class="card-details">
             <br/>
             <p>
-            Email attachments, malicious websites,<br/>
-            FTP, Bluetooth, or USB drives
+              Distribute created package (attack)
             </p>
             <a href="/delivery" target="_blank" class="button">See demo</a>
           </div>
         </div>
 
         <div class="card">
-          <h2>Install/Exploit</h2>
-          <p>Use 'weapon' to exploit a specific vulnerability in the target's system and install</p>
+          {/* <h2>Install/Exploit</h2> */} <BsFillDoorOpenFill className='icon'/>
           <div class="card-details">
             <br/>
-            <p>Using a weapon to exploit a vulnerability in the target's system by an exploit database</p>
+            <p>Exploit target vulnerability</p>
             <a href="/exploit" target="_blank" class="button">See demo</a>
           </div>
         </div>
 
         <div class="card">
-          <h2>Command & Control</h2>
-          <p>Gain inital control of the target's system</p>
+          {/* <h2>Command & Control</h2> */} <IoLogoGameControllerB className='icon'/>
           <div class="card-details">
             <br/>
-            <p>Establish communication with the target's system and maintain control</p>
+            <p>Establish communication with target system</p>
             <a href="/exploit" target="_blank" class="button">See demo</a>
             </div>
               </div>
 
               <div class="card">
-                <h2>Actions on Objectives</h2>
-                <p>Attacker achieves their ultimate goal</p>
+                {/* <h2>Actions on Objectives</h2> */} <FaLaptopCode className='icon'/>
                 <div class="card-details">
                   <br/>
-                  <p>May use the reverse shell tool to establish a connection to the target's system and retrieve the desired informatio</p>
+                  <p>Retrieve the desired information</p>
                   <a href="/objectives" target="_blank" class="button">See demo</a>
                 </div>
               </div>
