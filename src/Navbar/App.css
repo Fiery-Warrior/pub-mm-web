@@ -4,6 +4,7 @@
   /*Effects http://127.0.0.1:8000/exploit/*/
   background-color: #3d4548; /*#2C3639*//*#4e6d76;*//*#151313;*/
   border-bottom: 3px solid #fff;
+  min-width: 1102px;
 }
 
 .header {
@@ -38,13 +39,21 @@
   padding-left: 1%;
   padding-right: 5%; 
 }
-
+/*How big the top black Navbar is that holds the icons and logos*/
 .flex-container-top {
   display: flex;
   flex-direction: row;
   background-color: #000000; /*#1b2b4d*/
   min-height: 120px;
+  min-width: 1102px;
+
 }
+/* @media only screen and (width <= 414px){ 
+  .flex-container-top {
+    min-width: 1102px;
+  }
+} */
+/*and (width > 374px)*/
 
 
 .terminal {

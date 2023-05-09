@@ -136,7 +136,7 @@ function Pub() {
           <div class="card-details">
             <br/>
             <p>Establish communication with target system</p>
-            <a href="/exploit" target="_blank" class="button">See demo</a>
+            <a href="/connections" target="_blank" class="button">See demo</a>
             </div>
               </div>
 
