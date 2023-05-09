@@ -23,6 +23,37 @@ export default function BasicCard() {
     <a href="/filedisplaykey/" target="_blank">
     <Card
       sx={{
+        // minWidth: 455,
+        // width: '300px',
+        // height: '275px',
+        // position: 'absolute',
+        // top: '150px',
+        // left: '530px',
+
+        // '@media (max-width: 1515px)': {
+        //   left: '465px',
+        //   minWidth: 350,
+        //   height: '230px',
+        // },
+
+
+        // '@media (max-width: 1215px)': {
+        //   left: '445px',
+        //   top: '175px',
+        //   minWidth: 250,
+        //   height: '200px',
+        //   width: '320px',
+
+        // },
+
+        // '@media (max-width: 1115px)': {
+        //   top: '170px',
+        //   minWidth: 250,
+        //   height: '180px',
+        //   width: '250px',
+        //   left: '40%',
+
+        // },
         minWidth: 455,
         width: '300px',
         height: '275px',
@@ -55,6 +86,12 @@ export default function BasicCard() {
           height: '210px',
         },
 
+        //For mobile devices
+        '@media (width <= 414px)': {
+          top: '405px', 
+          left: '30px',
+          minWidth: 1038,
+        },
       }}
         className="card"
         onMouseEnter={handleMouseEnter}

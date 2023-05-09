@@ -84,6 +84,12 @@ export default function BasicCard() {
             height: '210px',
           },
 
+        //For mobile devices
+        '@media (width <= 414px)': {
+          left: '30px',
+          minWidth: 1038,
+        },
+
         }}
         className="card"
         onMouseEnter={handleMouseEnter}

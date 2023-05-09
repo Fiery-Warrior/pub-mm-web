@@ -20,9 +20,37 @@ export default function BasicCard() {
   };
 
   return (
-    <a href="/Action/" target="_blank">
+    <a href="/filedisplayw/" target="_blank">
       <Card
         sx={{
+          // minWidth: 455,
+          // width: '300px',
+          // height: '275px',
+          // position: 'absolute',
+          // top: '150px',
+          // left: '50px',
+          // '@media (max-width: 1515px)': {
+          //   minWidth: 350,
+          //   left: '80px',
+          //   height: '230px',
+          // },
+
+          // '@media (max-width: 1215px)': {
+          //   top: '175px',
+          //   minWidth: 250,
+          //   height: '200px',
+          //   width: '320px',
+
+          // },
+
+          // '@media (max-width: 1115px)': {
+          //   top: '170px',
+          //   minWidth: 250,
+          //   height: '180px',
+          //   width: '250px',
+          //   left: '9%',
+
+          // },
           minWidth: 455,
           width: '300px',
           height: '275px',
@@ -56,6 +84,11 @@ export default function BasicCard() {
             height: '210px',
           },
 
+        //For mobile devices
+        '@media (width <= 414px)': {
+          left: '30px',
+          minWidth: 1038,
+        },
 
         }}
         className="card"
@@ -78,7 +111,7 @@ export default function BasicCard() {
         </CardContent>
         {hovered && (
           <CardActions>
-            <a href="/Action/" target="_blank">
+            <a href="/filedisplayw/" target="_blank">
             </a>
           </CardActions>
         )}

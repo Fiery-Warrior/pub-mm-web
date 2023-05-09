@@ -54,7 +54,14 @@ export default function BasicCard() {
           height: '180px',
           width: '250px',
           left: '40%', //'470px',
+        },
 
+        //For mobile devices
+        '@media (width <= 414px)': {
+          top: '405px', 
+          left: '30px',
+          height: 210,
+          minWidth: 1038,
         },
 
       }}

@@ -6,7 +6,7 @@ const FileDisplayW = () => {
   return (
     <div className="file-display-container">
       <div className="file-display-item">
-        <h2 className="file-display-heading">serve.py</h2>
+        <h2 className="file-display-heading">server.py</h2>
         <pre className="file-display-content" >
           <code> 
             {`
