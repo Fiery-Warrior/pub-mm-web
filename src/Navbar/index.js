@@ -42,6 +42,9 @@ const Navbar = () => {
 	const closeNav = () => {
 		document.getElementById("mySidepanel").style.width = "0";
 	}
+
+
+
 return (
 	<div className="App">
 		<div className='flex-container-top'>
@@ -50,7 +53,7 @@ return (
 
 			
 			<a href="/home" target="_blank"> {/*points to home */}
-			<img src={logo} alt="logo" style={{width: '200px', height: '35px'}} className='logo-moriarty'/>
+			<img src={logo} alt="logo" className='logo-moriarty'/> {/**style={{width: '200px', height: '35px'}} */}
 			</a>
 
 
@@ -64,16 +67,20 @@ return (
 					x
 				</a>
 
-				<a href="/hambar#recon" class="navbar__item"><GiMagnifyingGlass /> Recon</a>
-				<a href="/hambar#weapon" class="navbar__item"><GiAnvilImpact /> Weapon</a>
-				<a href="/hambar#delivery" class="navbar__item"><TfiEmail /> Delivery</a>
-				<a href="/hambar#exploit" class="navbar__item"><BsFillDoorOpenFill /> Exploit</a>
-				<a href="/hambar#install" class="navbar__item"><FaDownload /> Install</a>
-				<a href="/hambar#control" class="navbar__item"><IoLogoGameControllerB /> Control</a>
-				<a href="/hambar#actions" class="navbar__item"><FaLaptopCode /> Actions</a>
-
-
+				<a href="/" class="navbar__item"><AiFillHome />Home</a>
+				<a href="https://github.com/Fiery-Warrior/mm_pythonweb" class="navbar__item"><BsGithub />Github</a>
+				<a href="/reconicon" class="navbar__item"><GiMagnifyingGlass /> Recon</a>
+				<a href="/weapon" class="navbar__item"><GiAnvilImpact /> Weapon</a>
+				<a href="/delivery" class="navbar__item"><TfiEmail /> Delivery</a>
+				<a href="/exploit" class="navbar__item"><BsFillDoorOpenFill /> Exploit</a>
+				<a href="/install" class="navbar__item"><FaDownload /> Install</a>
+				<a href="/connections" class="navbar__item"><IoLogoGameControllerB /> Control</a>
+				<a href="/objectivies" class="navbar__item"><FaLaptopCode /> Actions</a>
+				<a href="/contacts" class="navbar__item"><RiContactsBook2Fill />Contacts</a>
 			</div>
+
+
+
 
 
 

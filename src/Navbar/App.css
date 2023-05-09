@@ -4,8 +4,9 @@
   /*Effects http://127.0.0.1:8000/exploit/*/
   background-color: #3d4548; /*#2C3639*//*#4e6d76;*//*#151313;*/
   border-bottom: 3px solid #fff;
-  min-width: 1102px;
+
 }
+
 
 .header {
   background-color: black;
@@ -102,6 +103,30 @@ and no smaller than ____px the terminal-output width can be no longer than 55px 
   left: 3px;
   top: 59px;
 }
+@media only screen and (width <= 414px) {
+  .icon-house, .icon-tor, .icon-circle{
+    /* visibility: hidden; */
+    display: none !important;
+
+  }
+  @media only screen and (width <= 414px) {
+    .icon {
+      /* visibility: hidden; */
+      display: none !important;
+
+    }
+  }
+  .icon-hamburger-menu {
+    position: absolute;
+    top: -4px;
+    left: 47px;
+    font-size: 75px !important;
+  }
+
+  /* .App {
+    min-width: 1400px;
+  } */
+}
 .icon-house {
   position: absolute;
   font-size: 30px; 
@@ -138,6 +163,8 @@ and no smaller than ____px the terminal-output width can be no longer than 55px 
 .icon:hover, .terminal-icon:hover, .icon-circle:hover, .icon-house:hover, .icon-hamburger-menu:hover {
   color: rgb(255, 59,48);
 }
+
+
 /*When the width is 1200 px or less*/
 @media only screen and (max-width: 1200px) {
   .icon {
