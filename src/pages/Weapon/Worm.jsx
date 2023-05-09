@@ -30,13 +30,14 @@ export default function BasicCard() {
         position: 'absolute',
         top: '465px',
         right: '50px',
-        '@media (max-width: 1508px)': {
-          minWidth: 350,
-          right: '80px',
-          height: '230px',
-          top: '405px',
 
-        },
+        // '@media (max-width: 1508px)': {
+        //   minWidth: 350,
+        //   right: '80px',
+        //   height: '230px',
+        //   top: '405px',
+
+        // },
 
         '@media (max-width: 1508px)': {
           minWidth: 350,
