@@ -26,6 +26,11 @@
   /* padding-left: 10%;*/
 }
 
+@media only screen and (width <= 414px) {
+  .pub .cards-container {
+    /* display: none !important; */
+  }
+}
 .pub header {
   position: fixed;
   top: 0;
@@ -324,11 +329,11 @@ text-align: center;
 text-decoration: underline;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
 .pub nav {
 display: none;
 }
-}
+} */
 
 .pub .cards-container {
 /* background-color: #392e2e; */
