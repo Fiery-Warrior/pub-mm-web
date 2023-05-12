@@ -70,6 +70,15 @@
 .pub section:not(:last-child) {
   margin-bottom: 40px;
 }
+@media only screen and (width <= 414px) {
+  .pub section:not(:last-child), .pub .blog-card, .pub .blog h2, .pub footer {
+    /* display: none !important; */
+    margin-left: 10% !important;
+  }
+  .pub .feature-card {
+    max-width: 18rem !important;
+  }
+}
 
 .pub section h2 {
   font-size: 1.5rem;
@@ -361,6 +370,18 @@ padding: 20px;
 border-radius: 10px;
 }
 
+.card-header{
+    visibility: hidden;
+  }
+@media only screen and (width <= 414px) {
+  .pub .card-header {
+    color: #000000;
+    font-size: 35px;
+    font-weight: 700;
+    visibility: visible;
+  }
+}
+
 .pub .card-grid {
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -371,7 +392,9 @@ grid-auto-rows: minmax(200px, auto);
 .pub .card:hover {
 box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
 transform: scale(1.05);
-}
+} 
+
+
 
 .pub .card h2 {
 font-size: 1.5rem;
