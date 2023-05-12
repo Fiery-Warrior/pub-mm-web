@@ -286,20 +286,51 @@ function Home() {
 
 
 
-    <Card
-    icon={<BsFillDoorOpenFill style={{ color: '#FF3B30' }}/>}
-    title="Exploit"
-    description="This section is about malware."
-    />
+{/**End of Exploit Section */}
+<Card
+        icon={<BsFillDoorOpenFill style={{ color: '#FF3B30' }}/>}
+        title="Exploit"
+        className="card"
+        description={
+          <div>
+            <Card
+              icon={<CiSatellite1 />}
+              title="CISA"
+              // description={
+              //   <div>
+              //   </div>
+              // }
+              image= {cisaimage} className = "img-large"
+            />
+      <Card
+        icon={<FaBug/>}
+        title="Exploitdb"
+        // description={
+        //   <div>
+        //     <p>Send documents and messages through disposable emails</p>
+        //   </div>
+        // }
+        image= {expimage} className = "img-large"
+      />
+
+      <Card
+        icon={<IoWarningOutline/>}
+        title=" Common vulnerabilities"
+        image= {veimage} className = "img-large"
+      />
+
+    </div>
+  }
+/>{/**End of Exploit Section */}
+
     <Card
     icon={<FaDownload style={{ color: '#FF3B30' }}/>}
     title="Install"
-    description="This section is about install the malware 'package'."
+    description="Installing the malware 'package'."
     />    
     <Card
     icon={<IoLogoGameControllerB style={{ color: '#FF3B30' }}/>}
     title="Control"
-    // description="This phase is about receiving initial connections."
     description={
       <>
         <video width="750" height="500" controls >
@@ -311,7 +342,6 @@ function Home() {
     <Card
     icon={<FaLaptopCode style={{ color: '#FF3B30' }}/>}
     title="Actions"
-    // description="This section is about making the target machine do your (the attacker's will on objective) and how malicious code is used"
     description={
       <>
         <video width="750" height="500" controls >
