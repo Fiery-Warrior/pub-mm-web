@@ -12,9 +12,32 @@ import { FaDownload } from "react-icons/fa"
 import { IoLogoGameControllerB } from "react-icons/io"
 import { BsFillDoorOpenFill } from "react-icons/bs"
 import { FaLaptopCode } from "react-icons/fa"
-// import username from './HomeCards/images/username.png';
-// import domain from './HomeCards/images/domain.png';
-// import ip from './HomeCards/images/ip.png';
+/*weapon section*/
+import { GiKeyboard } from 'react-icons/gi';
+import { AiFillFileWord } from 'react-icons/ai';
+import { VscTerminalPowershell } from 'react-icons/vsc';
+import { BsFillFileEarmarkLock2Fill } from 'react-icons/bs';
+import keylogger from './HomeCards/images/keylogger.png';
+import reverseshellimage from './HomeCards/images/reverseshell.png';
+import vba from './HomeCards/images/vba.png';
+import ransom from './HomeCards/images/ransom.png';
+/*Delivery Section */
+import { BsBluetooth } from 'react-icons/bs';
+import { GrDocumentTransfer } from 'react-icons/gr';
+import { RiMailSendFill } from 'react-icons/ri';
+import emailimage from './HomeCards/images/emailimage.png';
+import ftpimage from './HomeCards/images/ftpimage.png';
+import blueimage from './HomeCards/images/blueimage.png';
+/*Exploit Section */
+import expimage from './HomeCards/images/expimage.png';
+import cisaimage from './HomeCards/images/cisaimage.png';
+import veimage from './HomeCards/images/veimage.png';
+import { IoWarningOutline } from 'react-icons/io5';
+import { FaBug } from 'react-icons/fa';
+import { CiSatellite1 } from 'react-icons/ci';
+
+
+/*others */
 import clone from './HomeCards/images/clone.png';
 import Card from "./HomeCards/homecards";
 
@@ -157,22 +180,112 @@ function Home() {
       />
     </div>
   }
-/>
-
- {/*Recon Card end */}
+/> {/*Recon Card end */}
 
 
+{/**Weapon card starts */}
+<Card
+        icon={<GiAnvilImpact style={{ color: '#FF3B30' }}/>}
+        title="Weapon"
+        className="card"
+        description={
+          <div>
+            <Card
+              icon={<VscTerminalPowershell />}
+              title="Reverse"
+              description={
+                <div>
+                  <p>Control target machine through web-terminal</p>
+                </div>
+              }
+              image= {reverseshellimage} className = "img-large"
+              underImageDescription="Control target through Moriarty Matrix Actions page"
+            />
+      <Card
+        icon={<GiKeyboard />}
+        title="Keylogger"
+        description={
+          <div>
+            <p>Record target's keystrokes identify passwords, websites, activity, and more.</p>
+          </div>
+        }
+        image= {keylogger} className = "img-large"
+        underImageDescription = "Capture data into a .txt file"
+      />
+
+      <Card
+        icon={<AiFillFileWord />}
+        title="VBA Macro"
+        description={
+          <div>
+            <p>Overload target system through MacroVirus</p>
+          </div>
+        }
+        image= {vba} className = "img-large"
+      />
     <Card
-    icon={<GiAnvilImpact style={{ color: '#FF3B30' }}/>}
-    title="Weapon"
-    description="This section is about exploit and how it is important in cybersecurity."
-    // image=""
-    />
-    <Card
-    icon={<TfiEmail style={{ color: '#FF3B30' }}/>}
-    title="Delivery"
-    description="Delivering the 'exploit'."
-    />
+        icon={<BsFillFileEarmarkLock2Fill />}
+        title="Ransomware"
+        description={
+          <div>
+            <p>Encrypt target's files and data with a specialized key</p>
+          </div>
+        }
+        image= {ransom} className = "img-large"
+      />
+    </div>
+  }
+/>{/**End of Weapon Section */}
+
+
+
+
+{/**End of Delivery Section */}
+<Card
+        icon={<TfiEmail style={{ color: '#FF3B30' }}/>}
+        title="Delivery"
+        className="card"
+        description={
+          <div>
+            <Card
+              icon={<BsBluetooth />}
+              title="Bluetooth"
+              description={
+                <div>
+                  <p>Send message through bluetooth</p>
+                </div>
+              }
+              image= {blueimage} className = "img-large"
+              underImageDescription="Must ensure you have bluetooth enable device or adapter for VM"
+            />
+      <Card
+        icon={<RiMailSendFill/>}
+        title="Temp Email"
+        description={
+          <div>
+            <p>Send documents and messages through disposable emails</p>
+          </div>
+        }
+        image= {emailimage} className = "img-large"
+      />
+
+      <Card
+        icon={<GrDocumentTransfer/>}
+        title="FTP"
+        description={
+          <div>
+            <p>Send documents over FTP using sender and reciever</p>
+          </div>
+        }
+        image= {ftpimage} className = "img-large"
+      />
+
+    </div>
+  }
+/>{/**End of Delivery Section */}
+
+
+
     <Card
     icon={<BsFillDoorOpenFill style={{ color: '#FF3B30' }}/>}
     title="Exploit"

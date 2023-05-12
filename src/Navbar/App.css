@@ -129,7 +129,7 @@ and no smaller than ____px the terminal-output width can be no longer than 55px 
   }
 
   .App {
-    min-width: 1000px;
+    min-width: 1100px;
   }
 }
 .icon-house {
