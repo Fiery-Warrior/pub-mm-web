@@ -71,10 +71,11 @@
   margin-bottom: 40px;
 }
 @media only screen and (width <= 414px) {
-  .pub section:not(:last-child), .pub .blog-card, .pub .blog h2, .pub footer {
-    /* display: none !important; */
+  /*Commented out because production build shows this has the opposite affect*/
+  /* .pub section:not(:last-child), .pub .blog-card, .pub .blog h2, .pub footer {
     margin-left: 10% !important;
-  }
+  } */
+
   .pub .feature-card {
     max-width: 18rem !important;
   }
