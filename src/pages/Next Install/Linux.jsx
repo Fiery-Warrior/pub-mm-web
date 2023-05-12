@@ -50,7 +50,7 @@ export default function Bugtraq() {
         },
         //For mobile devices
         '@media (width <= 414px)': {
-          top: '1170px', 
+          top: '405px',
           left: '30px',
           minWidth: 1038,
         },
