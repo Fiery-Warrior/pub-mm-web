@@ -20,7 +20,7 @@ export default function Apple() {
   };
 
   return (
-    <a href="/filedisplayvirus/" target="_blank">
+    <a href="/Mac/" target="_blank">
       <Card
       sx={{
         minWidth: 455,
@@ -81,7 +81,7 @@ export default function Apple() {
         </CardContent>
         {hovered && (
           <CardActions>
-            <a href="/filedisplayvirus/" target="_blank">
+            <a href="/Mac/" target="_blank">
             </a>
           </CardActions>
         )}

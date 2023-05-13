@@ -20,7 +20,7 @@ export default function BasicCard() {
   };
 
   return (
-    <a href="/Commonvuln/" target="_blank">
+    <a href="/Windows/" target="_blank">
       <Card
         sx={{
 
@@ -83,7 +83,7 @@ export default function BasicCard() {
         </CardContent>
         {hovered && (
           <CardActions>
-            <a href="/Commonvuln/" target="_blank">
+            <a href="/Windows/" target="_blank">
             </a>
           </CardActions>
         )}

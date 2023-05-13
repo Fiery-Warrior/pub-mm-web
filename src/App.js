@@ -51,6 +51,11 @@ import CISA from './pages/Next Exploit/cisa/FileDisplaycisa';
 import NatVuln from './pages/Next Exploit/nationalvuln/Natvuln';
 import Vx from './pages/Next Exploit/Vx';
 
+//Install
+import Linuxinstall from './pages/Next Install/Linux/Linuxinstall';
+import Windows from './pages/Next Install/Windows/WindowsFile';
+import Mac from './pages/Next Install/Apple/Mac';
+
 import Navbar from './Navbar';
 
 import Home from './pages/home';
@@ -114,8 +119,6 @@ function App() {
                 <Route path='/FileDisplayusb' element={<FileDisplayusb/>} />
                 <Route path='/FileDisplayweb' element={<FileDisplayweb/>} />
 
-
-
                 {/* Weapon Links */}
                 <Route path='/FileDisplayW' element={<ReverseShell/>} /> {/*ReverseShell*/}
                 <Route path='/FileDisplaykey' element={<FileDisplaykey/>} />
@@ -123,7 +126,6 @@ function App() {
                 <Route path='/FileDisplayworm' element={<FileDisplayworm/>} />
                 <Route path='/FileDisplayjacking' element={<FileDisplayjacking/>} />
                 <Route path='/FileDisplaydos' element={<FileDisplaydos/>} />
-
 
                 {/*Exploit Links */}
                 <Route path='/Commonvuln' element={<Commonvuln/>} />
@@ -133,18 +135,21 @@ function App() {
                 <Route path='/Nationalvulnerability' element={<NatVuln/>} />
                 <Route path='/vx' element={<Vx/>} />
 
+                {/*Install Links */}
+                <Route path='/Linux' element={<Linuxinstall/>} />
+                <Route path='/Windows' element={<Windows/>} />
+                <Route path='/Mac' element={<Mac/>} />
 
-                {/* Control/Actions/Objectives Links */}
 
-
+                {/* Other Links */}
 
                 <Route path='/contacts' element={<Contact/>} />
 
                 
                 <Route path='/Home' element={<Home/>} />
 
-
-                <Route path='/' element={<Pub/>} /> {/**Removed /Pub and made just '/' so that it would show as the deafult page at  http://localhost:3000/ but i still need to edit the links from clicked on /Pub to just '/' */}
+                {/**Removed /Pub and made just '/' so that it would show as the deafult page at  http://localhost:3000/ but i still need to edit the links from clicked on /Pub to just '/' */}
+                <Route path='/' element={<Pub/>} />
 
                 {/**Backend so will only show video clips in frontend */}
                 <Route path='/Action' element={<Action/>} />

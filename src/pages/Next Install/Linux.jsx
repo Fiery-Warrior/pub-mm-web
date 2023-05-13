@@ -20,7 +20,7 @@ export default function Bugtraq() {
   };
 
   return (
-    <a href="/filedisplaykey/" target="_blank">
+    <a href="/Linux/" target="_blank">
     <Card
       sx={{
         minWidth: 455,
@@ -75,7 +75,7 @@ export default function Bugtraq() {
         </CardContent>
         {hovered && (
           <CardActions>
-            <a href="/filedisplaykey/" target="_blank">
+            <a href="/Linux/" target="_blank">
             </a>
           </CardActions>
         )}
