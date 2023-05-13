@@ -90,7 +90,7 @@ function Pub() {
 
         <div class="card">
           {/* <h2>Reconnaissance</h2> */} <GiMagnifyingGlass className='icon'/>
-          <h2 className='card-header'>Recon</h2>
+          <h2 className='card-header'> <GiMagnifyingGlass/></h2>
           <div class="card-details">
             <br/>
             <p>
@@ -103,7 +103,7 @@ function Pub() {
 
         <div class="card">
           {/* <h2>Weaponization</h2> */} <GiAnvilImpact className='icon'/>
-          <h2 className='card-header'>Weapon</h2>
+          <h2 className='card-header'><GiAnvilImpact/></h2>
           <div class="card-details">
             <br/>
             <p>
@@ -115,7 +115,7 @@ function Pub() {
 
         <div class="card">
           {/* <h2>Delivery</h2> */} <TfiEmail className='icon'/>
-          <h2 className='card-header'>Delivery</h2>
+          <h2 className='card-header'><TfiEmail/></h2>
           <div class="card-details">
             <br/>
             <p>
@@ -127,7 +127,7 @@ function Pub() {
 
         <div class="card">
           {/* <h2>Install/Exploit</h2> */} <BsFillDoorOpenFill className='icon'/>
-          <h2 className='card-header'>Exploit</h2>
+          <h2 className='card-header'><BsFillDoorOpenFill/></h2>
           <div class="card-details">
             <br/>
             <p>Exploit target vulnerability</p>
@@ -137,7 +137,7 @@ function Pub() {
 
         <div class="card">
           {/* <h2>Command & Control</h2> */} <IoLogoGameControllerB className='icon'/>
-          <h2 className='card-header'>Control</h2>
+          <h2 className='card-header'><IoLogoGameControllerB/></h2>
           <div class="card-details">
             <br/>
             <p>Establish communication with target system</p>
@@ -147,7 +147,7 @@ function Pub() {
 
               <div class="card">
                 {/* <h2>Actions on Objectives</h2> */} <FaLaptopCode className='icon'/>
-                <h2 className='card-header'>Actions</h2>
+                <h2 className='card-header'><FaLaptopCode/></h2>
                 <div class="card-details">
                   <br/>
                   <p>Retrieve the desired information</p>

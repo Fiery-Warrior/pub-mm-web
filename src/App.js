@@ -48,8 +48,8 @@ import Commonvuln from './pages/Next Exploit/commonvuln/FileDisplaycv';
 import CommonWeak from './pages/Next Exploit/commonweak/CommonWeak';
 import Exploitdb from './pages/Next Exploit/exploitdb/Exploitdb';
 import CISA from './pages/Next Exploit/cisa/FileDisplaycisa';
-
-
+import NatVuln from './pages/Next Exploit/nationalvuln/Natvuln';
+import Vx from './pages/Next Exploit/Vx';
 
 import Navbar from './Navbar';
 
@@ -130,6 +130,8 @@ function App() {
                 <Route path='/CommonWeak' element={<CommonWeak/>} />
                 <Route path='/Exploitdb' element={<Exploitdb/>} />
                 <Route path='/CISA' element={<CISA/>} />
+                <Route path='/Nationalvulnerability' element={<NatVuln/>} />
+                <Route path='/vx' element={<Vx/>} />
 
 
                 {/* Control/Actions/Objectives Links */}

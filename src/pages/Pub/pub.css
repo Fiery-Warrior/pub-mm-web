@@ -377,8 +377,9 @@ border-radius: 10px;
 @media only screen and (width <= 414px) {
   .pub .card-header {
     color: #000000;
-    font-size: 35px;
-    font-weight: 700;
+    /* font-size: 35px;
+    font-weight: 700; */
+    font-size: 118px !important;
     visibility: visible;
   }
 }
