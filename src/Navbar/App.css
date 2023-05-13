@@ -295,9 +295,7 @@ and no smaller than ____px the terminal-output width can be no longer than 55px 
 
 .sidepanel  {
   width: 0;
-  position: fixed;
-
-
+  position: absolute; /*Absolute so that when the user scrolls down the page the nav bar stays in place of the page and not the same place on the px of screen (use sticky for that) see on /home for clearest viewing*/
   z-index: 1;
   height: 600px;
   top: 121px;
@@ -305,7 +303,7 @@ and no smaller than ____px the terminal-output width can be no longer than 55px 
   background-color: #111;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
+  padding-top: 30px;
 }
 
 .sidepanel a {
