@@ -19,7 +19,7 @@ import Freq from './pages/freq';
 import FileDisplaycontrol from './pages/Objectives/FileDisplaycontrol';
 
 //Recon
-// import FileDisplayip from './pages/Recon/ip/FileDisplayip';
+import FileDisplayip from './pages/Recon/ip/FileDisplayip';
 import FileDisplaydomain from './pages/Recon/domain/FileDisplaydomain';
 import Phish from './pages/Recon/Phish/Phish';
 import SmediaLogin from './pages/Recon/Phish/SmediaLogin';
@@ -106,7 +106,7 @@ function App() {
 
 
                 {/* Recon Links */}
-                {/* <Route path='/FileDisplayip' element={<FileDisplayip/>} /> */}
+                <Route path='/FileDisplayip' element={<FileDisplayip/>} />
                 <Route path='/FileDisplaydomain' element={<FileDisplaydomain/>} />
                 <Route path='/Phish' element={<Phish/>} />
                 <Route path='/SmediaLogin' element={<SmediaLogin/>} />
