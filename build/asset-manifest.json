@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.7445136d.css",
-    "main.js": "/static/js/main.d5beae5e.js",
+    "main.js": "/static/js/main.8aad813b.js",
     "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
     "static/media/Usernames.mp4": "/static/media/Usernames.aef4b6e798cdee7d364a.mp4",
     "static/media/Whois.mp4": "/static/media/Whois.f5e57f4ceb225a37c062.mp4",
@@ -12,8 +12,11 @@
     "static/media/IP.mp4": "/static/media/IP.c9917b03db992237e6d0.mp4",
     "static/media/ftpimage.png": "/static/media/ftpimage.eee2221ffdf57df955dd.png",
     "static/media/ransom.png": "/static/media/ransom.e2613100764c7a4c9ecd.png",
+    "static/media/windows_install.png": "/static/media/windows_install.18ad3b2ef304cd0aebaf.png",
     "static/media/Connections.mp4": "/static/media/Connections.3a7fb7ce775cb9bea9cd.mp4",
+    "static/media/mac.png": "/static/media/mac.e930b8cd3514f59d21b1.png",
     "static/media/cisaimage.png": "/static/media/cisaimage.67b3b7a8a0168c084b3c.png",
+    "static/media/iphone.png": "/static/media/iphone.33d7929d4e80fd326977.png",
     "static/media/vba.png": "/static/media/vba.d72acefef31d68564691.png",
     "static/media/veimage.png": "/static/media/veimage.983dd35830a86e9d0fcf.png",
     "static/media/expimage.png": "/static/media/expimage.0887cbb4e768f5dade67.png",
@@ -21,11 +24,11 @@
     "static/media/clone.png": "/static/media/clone.8c4266308e220db7490d.png",
     "index.html": "/index.html",
     "main.7445136d.css.map": "/static/css/main.7445136d.css.map",
-    "main.d5beae5e.js.map": "/static/js/main.d5beae5e.js.map",
+    "main.8aad813b.js.map": "/static/js/main.8aad813b.js.map",
     "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7445136d.css",
-    "static/js/main.d5beae5e.js"
+    "static/js/main.8aad813b.js"
   ]
 }
