@@ -11,7 +11,7 @@ import { FaLaptopCode } from "react-icons/fa"
 
 function Pub() {
   const [title, setTitle] = useState("The Website for Security Educators");
-  const titles = ["The Website for Security Teams", "The Website for Sysadmins", "The Website for Learners", "The Website for Engineers"];
+  const titles = ["The Website for Security Teams", "The Website for Sysadmins", "The Website for Learners", "The Website for Engineers", "The Website for Developers"];
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -27,11 +27,9 @@ function Pub() {
       <a href = "/home" target="_blank">
           <img src="/logo.png" alt="logo" style={{width: '250px', height: '45px'}} />
         </a>
-        {/* <img src="/logo.png" alt="logo" style={{width: '250px', height: '45px'}} /> */}
-        {/*<h1>Moriarty Matrix</h1>*/}
+
         <nav>
           <ul>
-            {/* <li><a href="#">Home</a></li> */}
             <li><a href="/home" target="_blank">Features</a></li>
             <li><a href="https://github.com/Fiery-Warrior/mm_pythonweb" target="_blank">GitHub</a></li>
             <li><a href="/contacts">Contact Me</a></li>
