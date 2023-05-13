@@ -14,7 +14,7 @@ import socket
 import os
 import datetime
 
-SERVER_IP = '192.30.12.231'  # replace with server IP, If you are the attacker then this is your ip address
+SERVER_IP = ''  # replace with server IP, If you are the attacker then this is your ip address
 SERVER_PORT = 1234  # replace with server port
 
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -44,7 +44,7 @@ client_socket.close()
 
 import socket
 
-SERVER_IP = '192.30.12.231'  # replace with server IP, If you are the attacker then this is your ip address
+SERVER_IP = ''  # replace with server IP, If you are the attacker then this is your ip address
 SERVER_PORT = 1234  # replace with server port
 
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -74,9 +74,9 @@ while True:
           Example Output: <br/><br/>
           Hostname: DESKTOP-DISTO 
           <br/>
-          Operating System: nt
+          Operating System: nk
           <br/>
-          IP address: 192.30.12.231
+          IP address: 
           <br/>
           Current time: 2023-04-12 12:35:26
         </p>

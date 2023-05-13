@@ -20,7 +20,7 @@ export default function BasicCard() {
   };
 
   return (
-    <a href="/filedisplayip/" target="_blank">
+    <a href="/ip/" target="_blank">
       <Card
       sx={{
         minWidth: 455,
@@ -77,7 +77,7 @@ export default function BasicCard() {
         </CardContent>
         {hovered && (
           <CardActions>
-            <a href="/filedisplayip/" target="_blank">
+            <a href="/ip/" target="_blank">
             </a>
           </CardActions>
         )}
