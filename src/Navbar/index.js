@@ -75,7 +75,7 @@ return (
 				<a href="/exploit" class="navbar__item"><BsFillDoorOpenFill /> Exploit</a>
 				<a href="/install" class="navbar__item"><FaDownload /> Install</a>
 				<a href="/connections" class="navbar__item"><IoLogoGameControllerB /> Control</a>
-				<a href="/objectivies" class="navbar__item"><FaLaptopCode /> Actions</a>
+				<a href="/objectives" class="navbar__item"><FaLaptopCode /> Actions</a>
 				<a href="/contacts" class="navbar__item"><RiContactsBook2Fill />Contacts</a>
 			</div>
 
