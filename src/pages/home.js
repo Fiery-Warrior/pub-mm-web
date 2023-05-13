@@ -35,8 +35,13 @@ import veimage from './HomeCards/images/veimage.png';
 import { IoWarningOutline } from 'react-icons/io5';
 import { FaBug } from 'react-icons/fa';
 import { CiSatellite1 } from 'react-icons/ci';
-
-
+/*Install */
+import iphone from './HomeCards/images/iphone.png';
+import mac from './HomeCards/images/mac.png';
+import windows_install from './HomeCards/images/windows_install.png';
+import { BsWindows } from 'react-icons/bs';
+import { GrApple } from 'react-icons/gr';
+import { MdPhoneIphone } from 'react-icons/md';
 /*others */
 import clone from './HomeCards/images/clone.png';
 import Card from "./HomeCards/homecards";
@@ -323,11 +328,36 @@ function Home() {
   }
 />{/**End of Exploit Section */}
 
-    <Card
-    icon={<FaDownload style={{ color: '#FF3B30' }}/>}
-    title="Install"
-    description="Installing the malware 'package'."
-    />    
+
+{/**End of install Section */}
+<Card
+        icon={<FaDownload style={{ color: '#FF3B30' }}/>}
+        title="Install"
+        className="card"
+        description={
+          <div>
+            <Card
+              icon={<MdPhoneIphone />}
+              title="iphone"
+              image= {iphone} className = "img-large"
+            />
+      <Card
+        icon={<BsWindows/>}
+        title="Windows"
+        image= {windows_install} className = "img-large"
+      />
+
+      <Card
+        icon={<GrApple/>}
+        title=" Macintosh"
+        image= {mac} className = "img-large"
+      />
+
+    </div>
+  }
+/>{/**End of Install Section */}
+
+
     <Card
     icon={<IoLogoGameControllerB style={{ color: '#FF3B30' }}/>}
     title="Control"
