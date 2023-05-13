@@ -20,7 +20,7 @@ export default function BasicCard() {
   };
 
   return (
-    <a href="/filedisplayworm/" target="_blank">
+    <a href="/iphone/" target="_blank">
       <Card
       sx={{
 
@@ -86,7 +86,7 @@ export default function BasicCard() {
         </CardContent>
         {hovered && (
           <CardActions>
-            <a href="/filedisplayworm/" target="_blank">
+            <a href="/iphone/" target="_blank">
             </a>
           </CardActions>
         )}

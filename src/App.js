@@ -55,6 +55,9 @@ import Vx from './pages/Next Exploit/Vx';
 import Linuxinstall from './pages/Next Install/Linux/Linuxinstall';
 import Windows from './pages/Next Install/Windows/WindowsFile';
 import Mac from './pages/Next Install/Apple/Mac';
+import Iphoneios from './pages/Next Install/ios/iphone';
+import Android from './pages/Next Install/Android/Android';
+import Aws from './pages/Next Install/Aws';
 
 import Navbar from './Navbar';
 
@@ -139,6 +142,9 @@ function App() {
                 <Route path='/Linux' element={<Linuxinstall/>} />
                 <Route path='/Windows' element={<Windows/>} />
                 <Route path='/Mac' element={<Mac/>} />
+                <Route path='/iphone' element={<Iphoneios/>} />
+                <Route path='/android' element={<Android/>} />
+                <Route path='/aws' element={<Aws/>} />
 
 
                 {/* Other Links */}
