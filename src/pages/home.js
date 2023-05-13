@@ -64,7 +64,7 @@ function Home() {
         flexDirection: "column",
         gap: "20px",
         alignItems: "flex-start",
-        width: "100vw",
+        width: "94vw",
         maxWidth: "100%",
         padding: "20px",
       }}
