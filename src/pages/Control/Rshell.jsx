@@ -20,7 +20,7 @@ export default function BasicCard() {
   };
 
   return (
-    <a href="/Action/" target="_blank">
+    <a href="https://clipchamp.com/watch/Twi2lvzvY98" target="_blank">
       <Card
         sx={{
           // minWidth: 455,
@@ -85,7 +85,7 @@ export default function BasicCard() {
           },
 
         //For mobile devices
-        '@media (width <= 414px)': {
+        '@media (width <= 500px)': {
           left: '30px',
           minWidth: 1038,
         },
@@ -111,7 +111,7 @@ export default function BasicCard() {
         </CardContent>
         {hovered && (
           <CardActions>
-            <a href="/Action/" target="_blank">
+            <a href="https://clipchamp.com/watch/Twi2lvzvY98/" target="_blank">
             </a>
           </CardActions>
         )}

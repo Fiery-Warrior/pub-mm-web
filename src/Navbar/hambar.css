@@ -21,7 +21,7 @@ body {
     padding-top: 8.8%;
     padding-left: 1.8%;
   }
-  @media only screen and (width <= 414px) {
+  @media only screen and (width <= 500px) {
     .logo-moriarty{
       width: 500px ;
       height: 70px;

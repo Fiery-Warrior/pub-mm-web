@@ -73,7 +73,7 @@ function Pub() {
 
 
         {/* <section classsName = "video-container">
-        <video width="750" height="500" controls>
+        <video width="750" height="500px" controls>
           <source src={Full} type="video/mp4"/>
         </video>
         </section> */}

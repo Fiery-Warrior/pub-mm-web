@@ -91,7 +91,7 @@ function Home() {
                   {/* <br/> 
                   <p>Provides lifestyle insights on the target, an attacker may use this information to reach out to the target on various platforms, assume their identity, craft phishing emails, etc...</p>
                   <br/> */}
-                  <video width="750" height="500" controls >
+                  <video width="750" height="500px" controls >
                     <source src={Username} type="video/mp4"/>
                   </video>
                   <p>Database of Username is Powered by </p>
@@ -113,7 +113,7 @@ function Home() {
             <p>Enter domain (such as youtube.com), you can input that domain and will receive 
               data on it is registered </p>
             {/* <p>After finding information about the domain an attacker may use this information</p> */}
-              <video width="750" height="500" controls >
+              <video width="750" height="500px" controls >
                     <source src={Whois} type="video/mp4"/>
               </video>
             {/* <p>Backend & Database Powered by whois</p>  */}
@@ -137,7 +137,7 @@ function Home() {
             {/* <p>After finding information about the ip an attacker may use this information in various fashions such as knowing where someone lives</p> */}
               {/* <br/>
               <br/> */}
-              <video width="750" height="500" controls >
+              <video width="750" height="500px" controls >
                     <source src={IP} type="video/mp4"/>
               </video>
           </div>
@@ -363,7 +363,7 @@ function Home() {
     title="Control"
     description={
       <>
-        <video width="750" height="500" controls >
+        <video width="750" height="500px" controls >
           <source src={Connections} type="video/mp4"/>
         </video>
       </>
@@ -374,7 +374,7 @@ function Home() {
     title="Actions"
     description={
       <>
-        <video width="750" height="500" controls >
+        <video width="750" height="500px" controls >
           <source src={Actions} type="video/mp4"/>
         </video>
       </>

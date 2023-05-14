@@ -55,7 +55,7 @@ export default function Apple() {
           height: '210px',
         },
         //For mobile devices
-        '@media (width <= 414px)': {
+        '@media (width <= 500px)': {
           top: '660px', 
           left: '30px',
           minWidth: 1038,

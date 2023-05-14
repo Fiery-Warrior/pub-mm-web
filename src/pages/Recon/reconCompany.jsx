@@ -56,7 +56,7 @@ export default function BasicCard() {
         },
 
         //For mobile devices
-        '@media (width <= 414px)': {
+        '@media (width <= 500px)': {
           top: '405px', 
           left: '30px',
           minWidth: 1038,
