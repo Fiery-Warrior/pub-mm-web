@@ -128,9 +128,9 @@
 
 
 .pub .expanded {
-  width: 500px;
-  height: 500px;
-  transition: width 0.5s, height 0.5s;
+  width: 200px;
+  height: 200px;
+  transition: width 5.5s, height 5.5s;
 }
 
 /*{
@@ -150,7 +150,7 @@ padding: 0;
   justify-content: space-between;
   align-items: center;
   padding: 3rem;
-  background-color: black;
+  background-color: #1d1c1c; /*black;*/
   position: fixed;
   top: 0;
   left: 0;

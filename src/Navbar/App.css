@@ -49,7 +49,7 @@
 .flex-container-top {
   display: flex;
   flex-direction: row;
-  background-color: #000000; /*#1b2b4d*/
+  background-color: #191717;/*#000000;*/ /*#1b2b4d*/
   min-height: 120px;
   min-width: 1102px;
 
