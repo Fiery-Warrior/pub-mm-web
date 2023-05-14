@@ -44,13 +44,10 @@ import { GrApple } from 'react-icons/gr';
 import { MdPhoneIphone } from 'react-icons/md';
 /*others */
 import clone from './HomeCards/images/clone.png';
+import actions from './HomeCards/images/Actionsimage.png';
+
 import Card from "./HomeCards/homecards";
 
-import Username from './HomeCards/videos/Usernames.mp4';
-import Whois from './HomeCards/videos/Whois.mp4';
-import Connections from './HomeCards/videos/Connections.mp4';
-import Actions from './HomeCards/videos/Actions.mp4';
-import IP from './HomeCards/videos/IP.mp4';
 
 function Home() {
   // const [showVideo, setShowVideo] = useState(false);
@@ -88,15 +85,14 @@ function Home() {
                   {/* <h3>This phase is about Username and their accounts.</h3> */}
                   <p>If you have a username (such as from Instagram), you can input that username and will receive 
                     URLs to numerous accounts that they are registered with such as Spotify, YouTube, Buzzfeed....</p>
+                    <a href="https://clipchamp.com/watch/cesDuEIbq1M" style={linkStyle} target="_blank" rel="noopener noreferrer">Moriarty-Search Demo</a> 
                   {/* <br/> 
                   <p>Provides lifestyle insights on the target, an attacker may use this information to reach out to the target on various platforms, assume their identity, craft phishing emails, etc...</p>
                   <br/> */}
-                  <video width="750" height="500px" controls >
-                    <source src={Username} type="video/mp4"/>
-                  </video>
                   <p>Database of Username is Powered by </p>
                   <a href="https://github.com/sherlock-project/sherlock.git" style={linkStyle} target="_blank" rel="noopener noreferrer">Sherlock</a>
                 </div>
+                
                 
               }
               // image={username}
@@ -113,9 +109,7 @@ function Home() {
             <p>Enter domain (such as youtube.com), you can input that domain and will receive 
               data on it is registered </p>
             {/* <p>After finding information about the domain an attacker may use this information</p> */}
-              <video width="750" height="500px" controls >
-                    <source src={Whois} type="video/mp4"/>
-              </video>
+            <a href="https://clipchamp.com/watch/C0HeGQv01ww" style={linkStyle} target="_blank" rel="noopener noreferrer">Moriarty Domain Demo</a> 
             {/* <p>Backend & Database Powered by whois</p>  */}
           </div>
         }
@@ -133,13 +127,9 @@ function Home() {
             {/* <h3>This phase is about IP and its information </h3> */}
             {/* <br/> */}
             <p>Analyze who owns an IP and where it is specifically located</p>
-            {/* <br/>  */}
-            {/* <p>After finding information about the ip an attacker may use this information in various fashions such as knowing where someone lives</p> */}
-              {/* <br/>
-              <br/> */}
-              <video width="750" height="500px" controls >
-                    <source src={IP} type="video/mp4"/>
-              </video>
+
+           <a href="https://clipchamp.com/watch/3t3Z3hVbxpm" style={linkStyle} target="_blank" rel="noopener noreferrer">Moriarty IP Demo</a> 
+
           </div>
         }
         // image= {ip} className = "img-large"
@@ -363,23 +353,20 @@ function Home() {
     title="Control"
     description={
       <>
-        <video width="750" height="500px" controls >
-          <source src={Connections} type="video/mp4"/>
-        </video>
+      <h3>Capture inital data from target's machine, use in the Actions step </h3>
+      <a href="https://clipchamp.com/watch/xTTNclB39dh" style={linkStyle} target="_blank" rel="noopener noreferrer">Moriarty Control Demo</a> 
+
       </>
     }
     />
+    <a href="https://clipchamp.com/watch/Twi2lvzvY98" style={linkStyle} target="_blank" rel="noopener noreferrer">
     <Card
     icon={<FaLaptopCode style={{ color: '#FF3B30' }}/>}
     title="Actions"
-    description={
-      <>
-        <video width="750" height="500px" controls >
-          <source src={Actions} type="video/mp4"/>
-        </video>
-      </>
-    }
+    image= {actions} className = "img-large"
+
     />
+    </a>
     </div>
   );
 }

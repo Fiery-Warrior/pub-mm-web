@@ -93,12 +93,12 @@ function Card({ icon, title, description, image, underImageDescription }) {
                 </div>
 
             {image && (
-                <div style={{ flex: "1", textAlign: "right" }}>
+                <div style={{ flex: "1"}}>
                     <div style={{ display: "flex", flexDirection: "column" }}>
                     <img
                         src={image}
                         alt={title}
-                        style={{ maxWidth: "100%", marginTop: "20px" }}
+                        style={{ maxWidth: "100%", maxHeight: "500px", marginTop: "20px", marginLeft: "-50%" }}
                     />
                     {underImageDescription && (
                         <p style={{ fontSize: "20px", textAlign: "center" , color: "white" }}>

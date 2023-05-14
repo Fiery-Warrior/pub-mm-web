@@ -1,5 +1,4 @@
 import React from "react";
-import Connections from '../HomeCards/videos/Connections.mp4';
 
 const style = `
 .video-container {
@@ -19,9 +18,7 @@ function Connection() {
     <>
       <style>{style}</style> {/* Add the CSS style */}
       <div className="video-container">
-        <video width="850" height="600" controls>
-          <source src={Connections} type="video/mp4" />
-        </video>
+
       </div>
     </>
   );

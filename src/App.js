@@ -68,7 +68,6 @@ import Contact from './pages/Contacts/Contacts';
 import Pub from './pages/Pub/pub.js';
 // import { Switch } from '@mui/material';
 
-import Action from './pages/Pyback/Action';
 import Connection from './pages/Pyback/Connection';
 import Username from './pages/Pyback/Username';
 import Domain from './pages/Pyback/Domain';
@@ -158,7 +157,6 @@ function App() {
                 <Route path='/' element={<Pub/>} />
 
                 {/**Backend so will only show video clips in frontend */}
-                <Route path='/Action' element={<Action/>} />
                 <Route path='/Connections' element={<Connection/>} />
                 <Route path='/Username' element={<Username/>} />
                 <Route path='/Domain' element={<Domain/>} />

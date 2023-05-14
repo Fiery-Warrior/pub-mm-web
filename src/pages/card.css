@@ -12,6 +12,12 @@
     overflow: hidden;
     background-color: #000000;
   }
+  @media only screen and (width <= 500px){
+.section-container {
+  width: 190vw;
+  max-width: 200%;
+}
+  }
   
   .section-header {
     display: flex;
