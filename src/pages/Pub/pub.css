@@ -231,11 +231,14 @@ text-align: center;
   border-style: solid;
   background-color: #fafcff;
   color: #000000;
+  box-shadow: 1px 3px 4px 1px #312929;
   }
   
   .pub .feature-card:hover {
   transform: translateY(-1rem);
-  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3); */
+  box-shadow: 2px 15px 14px 5px #000;
+
   }
   
   .pub .feature-card i {

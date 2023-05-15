@@ -100,10 +100,7 @@ function App() {
                 <Route path='/Freq' element={<Freq/>} />
                 <Route path='/Hambar' element={<Hambar/>} />
 
-                {/* Objectives */}
-                <Route path='/FileDisplaycontrol' element={<FileDisplaycontrol/>} /> {/*Control Page*/}
-
-
+             
                 {/* Recon Links */}
                 {/* <Route path='/FileDisplayip' element={<FileDisplayip/>} /> */}
                 <Route path='/FileDisplaydomain' element={<FileDisplaydomain/>} />
@@ -144,6 +141,9 @@ function App() {
                 <Route path='/iphone' element={<Iphoneios/>} />
                 <Route path='/android' element={<Android/>} />
                 <Route path='/aws' element={<Aws/>} />
+
+                {/* Connections/control */}
+                <Route path='/controlcode' element={<FileDisplaycontrol/>} /> {/*Control Page*/}
 
 
                 {/* Other Links */}
