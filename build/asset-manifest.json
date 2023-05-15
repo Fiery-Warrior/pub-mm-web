@@ -1,19 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.065971bd.css",
-    "main.js": "/static/js/main.441486a8.js",
+    "main.js": "/static/js/main.59468eb7.js",
     "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
-    "static/media/Usernames.mp4": "/static/media/Usernames.aef4b6e798cdee7d364a.mp4",
-    "static/media/Whois.mp4": "/static/media/Whois.f5e57f4ceb225a37c062.mp4",
-    "static/media/Actions.mp4": "/static/media/Actions.88ce405040b19ec0d720.mp4",
     "static/media/keylogger.png": "/static/media/keylogger.0158b5e8e7d2b01c583b.png",
     "static/media/blueimage.png": "/static/media/blueimage.731cd3635e2e639dadc6.png",
     "static/media/reverseshell.png": "/static/media/reverseshell.ac0771feef09f7896322.png",
-    "static/media/IP.mp4": "/static/media/IP.c9917b03db992237e6d0.mp4",
     "static/media/ftpimage.png": "/static/media/ftpimage.eee2221ffdf57df955dd.png",
     "static/media/ransom.png": "/static/media/ransom.e2613100764c7a4c9ecd.png",
     "static/media/windows_install.png": "/static/media/windows_install.18ad3b2ef304cd0aebaf.png",
-    "static/media/Connections.mp4": "/static/media/Connections.3a7fb7ce775cb9bea9cd.mp4",
+    "static/media/Actionsimage.png": "/static/media/Actionsimage.8f20e1661c4dcd50c345.png",
     "static/media/mac.png": "/static/media/mac.e930b8cd3514f59d21b1.png",
     "static/media/cisaimage.png": "/static/media/cisaimage.67b3b7a8a0168c084b3c.png",
     "static/media/iphone.png": "/static/media/iphone.33d7929d4e80fd326977.png",
@@ -25,11 +21,11 @@
     "static/media/logo.png": "/static/media/logo.b3936f1b57216e9a3f66.png",
     "index.html": "/index.html",
     "main.065971bd.css.map": "/static/css/main.065971bd.css.map",
-    "main.441486a8.js.map": "/static/js/main.441486a8.js.map",
+    "main.59468eb7.js.map": "/static/js/main.59468eb7.js.map",
     "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.065971bd.css",
-    "static/js/main.441486a8.js"
+    "static/js/main.59468eb7.js"
   ]
 }
