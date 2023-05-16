@@ -51,12 +51,13 @@
   flex-direction: row;
   background-color: #191717;/*#000000;*/ /*#1b2b4d*/
   min-height: 120px;
-  min-width: 1102px;
+  min-width: 414px;
 
 }
 /* @media only screen and (max-width: 500px){ 
   .flex-container-top {
-    min-width: 1102px;
+    max-width: 413px !important;
+    overflow: hidden;
   }
 } */
 /*and (width > 374px)*/
@@ -123,13 +124,13 @@ and no smaller than ____px the terminal-output width can be no longer than 55px 
   }
   .icon-hamburger-menu {
     position: absolute;
-    top: -4px;
-    left: 47px;
-    font-size: 75px !important;
+    top: 14px;
+    left: 7px;
+    font-size: 65px !important;
   }
 
   .App {
-    min-width: 1100px;
+    min-width: 414px;
   }
 }
 .icon-house {

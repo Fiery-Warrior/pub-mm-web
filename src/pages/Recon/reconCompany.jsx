@@ -59,7 +59,8 @@ export default function BasicCard() {
         '@media (max-width: 500px)': {
           top: '405px', 
           left: '30px',
-          minWidth: 1038,
+          minWidth: 350,
+          height: '210px',
         },
 
       }}

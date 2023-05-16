@@ -68,7 +68,8 @@ function Home() {
         alignItems: "flex-start",
         width: "94vw",
         maxWidth: "100%",
-        padding: "20px",
+        padding: "0px", //"20px"
+        paddingTop: "5%",
       }}
     >
       <Card

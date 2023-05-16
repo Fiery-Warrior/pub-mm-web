@@ -23,10 +23,10 @@ body {
   }
   @media only screen and (max-width: 500px) {
     .logo-moriarty{
-      width: 500px ;
-      height: 70px;
-      padding-top: 5%;
-      padding-left: 60%;
+      width: 257px;
+      height: 50px;
+      padding-top: 19% !important;
+      padding-left: 40%;
     }
   }
 
