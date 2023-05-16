@@ -58,7 +58,8 @@ export default function Apple() {
         '@media (max-width: 500px)': {
           top: '660px', 
           left: '30px',
-          minWidth: 1038,
+          minWidth: 350,
+          height: '210px',
         },
       }}
         className="card"
