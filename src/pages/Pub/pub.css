@@ -26,7 +26,7 @@
   /* padding-left: 10%;*/
 }
 
-@media only screen and (width <= 500px) {
+@media only screen and (max-width: 500px) {
   .pub .cards-container {
     /* display: none !important; */
   }
@@ -70,7 +70,7 @@
 .pub section:not(:last-child) {
   margin-bottom: 40px;
 }
-@media only screen and (width <= 500px) {
+@media only screen and (max-width: 500px) {
   /*Commented out because production build shows this has the opposite affect*/
   /* .pub section:not(:last-child), .pub .blog-card, .pub .blog h2, .pub footer {
     margin-left: 10% !important;
@@ -377,7 +377,7 @@ border-radius: 10px;
 .card-header{
     visibility: hidden;
   }
-@media only screen and (width <= 500px) {
+@media only screen and (max-width: 500px) {
   .pub .card-header {
     color: #000000;
     /* font-size: 35px;

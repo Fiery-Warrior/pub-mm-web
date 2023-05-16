@@ -12,7 +12,7 @@
     overflow: hidden;
     background-color: #000000;
   }
-  @media only screen and (width <= 500px){
+  @media only screen and (max-width: 500px){
 .section-container {
   width: 190vw;
   max-width: 200%;

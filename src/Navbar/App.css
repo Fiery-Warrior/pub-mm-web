@@ -54,7 +54,7 @@
   min-width: 1102px;
 
 }
-/* @media only screen and (width <= 500px){ 
+/* @media only screen and (max-width: 500px){ 
   .flex-container-top {
     min-width: 1102px;
   }
@@ -108,13 +108,13 @@ and no smaller than ____px the terminal-output width can be no longer than 55px 
   left: 3px;
   top: 59px;
 }
-@media only screen and (width <= 500px) {
+@media only screen and (max-width: 500px) {
   .icon-house, .icon-tor, .icon-circle{
     /* visibility: hidden; */
     display: none !important;
 
   }
-  @media only screen and (width <= 500px) {
+  @media only screen and (max-width: 500px) {
     .icon {
       /* visibility: hidden; */
       display: none !important;
