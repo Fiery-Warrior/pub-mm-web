@@ -87,7 +87,8 @@ export default function BasicCard() {
         //For mobile devices
         '@media (max-width: 500px)': {
           left: '30px',
-          minWidth: 1038,
+          minWidth: 350,
+          height: '210px',
         },
 
         }}
