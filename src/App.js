@@ -95,7 +95,7 @@ function App() {
                 <Route path='/exploit' element={<Exploit/>} />
                 <Route path='/install' element={<Install/>} />
                 <Route path='/control' element={<Objectives/>} />
-                <Route path='/objectives' element={<Control/>} /> {/*Originally Objectives */}
+                <Route path='/objectives' element={<Control/>} /> {/*Originally Objectives*/}
 
                 <Route path='/Freq' element={<Freq/>} />
                 <Route path='/Hambar' element={<Hambar/>} />
