@@ -45,7 +45,7 @@
   }
 
   .pub .intro p {
-    font-size: 1.5rem !important;
+    font-size: 2.5rem !important;
 }
 
 .pub .feature-card h3 {
@@ -54,6 +54,22 @@
 
 .pub .feature-card p {
   display: none !important;
+}
+
+/* .pub section p {
+  margin-bottom: -115px !important;
+} */
+
+.pub .button {
+  margin: -43px auto 0 !important;
+}
+
+.pub .card p {
+  display: none !important;
+}
+
+.pub .card-details {
+  display: block !important;
 }
 }
 
@@ -95,6 +111,10 @@
 
   .pub .feature-card {
     max-width: 18rem !important;
+  }
+
+  .pub .features {
+    display: none !important;
   }
 }
 

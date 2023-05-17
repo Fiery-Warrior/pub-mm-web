@@ -159,7 +159,9 @@ function Pub() {
 
 
         <section className="cta">
+          <a href ="https://github.com/Fiery-Warrior/mm_pythonweb.git" target="_blank">
           <button>Download Moriarty</button>
+          </a>
         </section>
         <section className="blog">
 
