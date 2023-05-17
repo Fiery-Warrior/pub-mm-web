@@ -131,6 +131,7 @@ and no smaller than ____px the terminal-output width can be no longer than 55px 
 
   .App {
     min-width: 414px;
+    overflow-x: hidden !important; /*Spesfically for / landing page x axis*/
   }
 }
 .icon-house {

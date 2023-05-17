@@ -39,6 +39,23 @@
   border-bottom: 3px solid #ddd;
   z-index: 9999;
 }
+@media only screen and (max-width: 500px) {
+  .pub header {
+     display: none !important;
+  }
+
+  .pub .intro p {
+    font-size: 1.5rem !important;
+}
+
+.pub .feature-card h3 {
+  font-size: 1.5rem !important;
+}
+
+.pub .feature-card p {
+  display: none !important;
+}
+}
 
 .pub header h1 {
   font-size: 2rem;

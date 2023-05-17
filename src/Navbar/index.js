@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { GiMagnifyingGlass } from "react-icons/gi";
+import { GiTeacher } from "react-icons/gi";
 import { GiAnvilImpact } from "react-icons/gi";
 import { TfiEmail } from "react-icons/tfi";
 import { FaDownload } from "react-icons/fa"
@@ -69,6 +70,7 @@ return (
 
 				<a href="/" class="navbar__item"><AiFillHome />Home</a>
 				<a href="https://github.com/Fiery-Warrior/mm_pythonweb" class="navbar__item"><BsGithub />Github</a>
+				<a href="/home" class="navbar__item"><GiTeacher /> Demo</a>
 				<a href="/reconicon" class="navbar__item"><GiMagnifyingGlass /> Recon</a>
 				<a href="/weapon" class="navbar__item"><GiAnvilImpact /> Weapon</a>
 				<a href="/delivery" class="navbar__item"><TfiEmail /> Delivery</a>

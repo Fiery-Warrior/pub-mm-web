@@ -86,7 +86,7 @@ function Home() {
                   {/* <h3>This phase is about Username and their accounts.</h3> */}
                   <p>If you have a username (such as from Instagram), you can input that username and will receive 
                     URLs to numerous accounts that they are registered with such as Spotify, YouTube, Buzzfeed....</p>
-                    <a href="https://clipchamp.com/watch/cesDuEIbq1M" style={linkStyle} target="_blank" rel="noopener noreferrer">Moriarty-Search Demo</a> 
+                    <a href="https://youtu.be/6LMysBR5vjU" style={linkStyle} target="_blank" rel="noopener noreferrer">Moriarty-Search Demo</a> 
                   {/* <br/> 
                   <p>Provides lifestyle insights on the target, an attacker may use this information to reach out to the target on various platforms, assume their identity, craft phishing emails, etc...</p>
                   <br/> */}
@@ -110,7 +110,7 @@ function Home() {
             <p>Enter domain (such as youtube.com), you can input that domain and will receive 
               data on it is registered </p>
             {/* <p>After finding information about the domain an attacker may use this information</p> */}
-            <a href="https://clipchamp.com/watch/C0HeGQv01ww" style={linkStyle} target="_blank" rel="noopener noreferrer">Moriarty Domain Demo</a> 
+            <a href="https://youtu.be/T_b1OSVHGWw" style={linkStyle} target="_blank" rel="noopener noreferrer">Moriarty Domain Demo</a> 
             {/* <p>Backend & Database Powered by whois</p>  */}
           </div>
         }
@@ -129,7 +129,7 @@ function Home() {
             {/* <br/> */}
             <p>Analyze who owns an IP and where it is specifically located</p>
 
-           <a href="https://clipchamp.com/watch/3t3Z3hVbxpm" style={linkStyle} target="_blank" rel="noopener noreferrer">Moriarty IP Demo</a> 
+           <a href="https://youtu.be/oeFvO5lAUV4" style={linkStyle} target="_blank" rel="noopener noreferrer">Moriarty IP Demo</a> 
 
           </div>
         }
@@ -355,12 +355,12 @@ function Home() {
     description={
       <>
       <h3>Capture inital data from target's machine, use in the Actions step </h3>
-      <a href="https://clipchamp.com/watch/xTTNclB39dh" style={linkStyle} target="_blank" rel="noopener noreferrer">Moriarty Control Demo</a> 
+      <a href="https://youtu.be/HV_5-dM7H8Y" style={linkStyle} target="_blank" rel="noopener noreferrer">Moriarty Control Demo</a> 
 
       </>
     }
     />
-    <a href="https://clipchamp.com/watch/Twi2lvzvY98" style={linkStyle} target="_blank" rel="noopener noreferrer">
+    <a href="https://youtu.be/zi1TnjxYGJg" style={linkStyle} target="_blank" rel="noopener noreferrer">
     <Card
     icon={<FaLaptopCode style={{ color: '#FF3B30' }}/>}
     title="Actions"
