@@ -34,7 +34,7 @@ function Connection() {
     <>
       <style>{style}</style>
       <div className="image-container">
-        <a href="https://clipchamp.com/watch/xTTNclB39dh">
+        <a href="https://youtu.be/HV_5-dM7H8Y">
           <img src={connection_image} alt="Connection" />
         </a>
         <a href="/controlcode">

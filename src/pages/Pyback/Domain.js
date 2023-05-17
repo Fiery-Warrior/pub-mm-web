@@ -34,7 +34,7 @@ function Domain() {
     <>
       <style>{style}</style>
       <div className="image-container">
-        <a href="https://clipchamp.com/watch/gWqMSEN8fGq">
+        <a href="https://youtu.be/T_b1OSVHGWw">
           <img src={domain} alt="ip" />
         </a>
       </div>

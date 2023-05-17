@@ -20,7 +20,7 @@ export default function BasicCard() {
   };
 
   return (
-    <a href="https://clipchamp.com/watch/Twi2lvzvY98" target="_blank">
+    <a href="https://youtu.be/zi1TnjxYGJg" target="_blank">
       <Card
         sx={{
           // minWidth: 455,
@@ -112,7 +112,7 @@ export default function BasicCard() {
         </CardContent>
         {hovered && (
           <CardActions>
-            <a href="https://clipchamp.com/watch/Twi2lvzvY98/" target="_blank">
+            <a href="https://youtu.be/zi1TnjxYGJg" target="_blank">
             </a>
           </CardActions>
         )}

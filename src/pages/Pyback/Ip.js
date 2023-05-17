@@ -34,7 +34,7 @@ function Ip() {
     <>
       <style>{style}</style>
       <div className="image-container">
-        <a href="https://clipchamp.com/watch/gWqMSEN8fGq">
+        <a href="https://youtu.be/oeFvO5lAUV4">
           <img src={ip_image} alt="ip" />
         </a>
       </div>
